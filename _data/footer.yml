@@ -1,4 +1,11 @@
 # Footer navigation links
 
-- title:
-  url:
+- title: home
+  url: /
+  
+- title: documentation
+  url: /documentation/
+  
+- title: contact
+  url: /contact/
+  
