@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: archive
 permalink: /
 title: "Inca Monitoring"
 excerpt: "Periodic, automated, user-level testing of Grid software and services"
