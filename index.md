@@ -1,37 +1,49 @@
 ---
-layout: archive
+layout: home
 permalink: /
-title: "Inca Monitoring"
-excerpt: "Periodic, automated, user-level testing of Grid software and services"
 image:
-  feature: 
-id: home
+  feature: inca-stones.jpg
 ---
 
-### Enables consistent user-level testing across resources
+<div class="tiles">
 
-Emulates a Grid user by running under a standard user account and executing tests using a standard GSI credential. Ensures consistent testing across resources with centralized test configuration.
+	<div class="tile">
+		<h2 class="post-title">Enables consistent user-level testing across resources</h2>
+		<p class="post-excerpt">Emulates a Grid user by running under a standard user account and executing tests using a standard GSI credential. Ensures consistent testing across resources with centralized test configuration.</p>
+	</div>
 
-### Easy to configure and maintain
+	<div class="tile">
+		<h2 class="post-title">Easy to configure and maintain</h2>
+		<p class="post-excerpt">Manages and collects a large number of results through a GUI interface (incat). Measures resource usage of tests and benchmarks to help Inca administrators balance data freshness with system impact.</p>
+	</div>
 
-Manages and collects a large number of results through a GUI interface (incat). Measures resource usage of tests and benchmarks to help Inca administrators balance data freshness with system impact.
+	<div class="tile">
+		<h2 class="post-title">Easy to collect data from resources</h2>
+		<p class="post-excerpt">Data is collected by reporters, executables that measure some aspect of the system and output the result as XML. Multiple types of data can be collected. Perl APIs are provided to make it easy to write reporters; most are less than 30 lines of code.</p>
+	</div>
 
-### Easy to collect data from resources
+	<div class="tile">
+		<h2 class="post-title">Large variety of tests</h2>
+		<p class="post-excerpt">Inca offers a number of prewritten test scripts, called <a href="/reporters">reporters</a>, for monitoring Grid health. Reporter APIs make it easy to create new Inca tests.</p>
+	</div>
 
-Data is collected by reporters, executables that measure some aspect of the system and output the result as XML. Multiple types of data can be collected. Perl APIs are provided to make it easy to write reporters; most are less than 30 lines of code.
+	<div class="tile">
+		<h2 class="post-title">Archived results support troubleshooting</h2>
+		<p class="post-excerpt">Furthers understanding of Grid behavior by storing and archiving complete monitoring results. Allows system administrators to debug detected failures using archived execution details.</p>
+	</div>
 
-### Large variety of tests
+	<div class="tile">
+		<h2 class="post-title">Comprehensive views of data</h2>
+		<p class="post-excerpt">Offers a variety of Grid data views from cumulative summaries to reporter execution details and result histories.</p>
+	</div>
 
-Inca offers a number of prewritten test scripts, called reporters, for monitoring Grid health. Reporter APIs make it easy to create new Inca tests.
+	<div class="tile">
+		<h2 class="post-title">Secure</h2>
+		<p class="post-excerpt">Inca components communicate using SSL. Securely manages short-term proxies for Grid service testing.</p>
+	</div>
 
-### Archived results support troubleshooting
-
-Furthers understanding of Grid behavior by storing and archiving complete monitoring results. Allows system administrators to debug detected failures using archived execution details.
-
-### Comprehensive views of data
-
-Offers a variety of Grid data views from cumulative summaries to reporter execution details and result histories.
-
-### Secure
-
-Inca components communicate using SSL. Securely manages short-term proxies for Grid service testing.
+	<div class="tile">
+		<h2 class="post-title">Learn more</h2>
+		<p class="post-excerpt"><strong>For more information about Inca</strong>, please visit our <a href="/documentation">documentation page</a>.</p><p class="post-excerpt">Inca is supported by the <a href="http://www.nsf.gov/">National Science Foundation (NSF)</a>.</p>
+	</div>
+</div>
