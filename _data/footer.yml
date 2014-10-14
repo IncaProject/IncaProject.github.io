@@ -1,11 +1,23 @@
 # Footer navigation links
 
-- title: home
+- title: Home
   url: /
   
-- title: documentation
+- title: Reporters
+  url: /reporters/
+
+- title: Downloads
+  url: /downloads/
+
+- title: Screenshots
+  url: /screenshots/
+
+- title: Documentation
   url: /documentation/
   
-- title: contact
+- title: Users
+  url: /users/
+
+- title: Contact
   url: /contact/
   

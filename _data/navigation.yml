@@ -1,12 +1,14 @@
 # Site navigation links
 
-- title: home
-  url: /
-# excerpt: "Things designed, illustrated, or developed by Michael Rose."
-# image: relic-scout-teaser-225.jpg
-  
-- title: documentation
+- title: Reporters
+  url: /reporters/
+
+- title: Downloads
+  url: /downloads/
+
+- title: Documentation
   url: /documentation/
   
-- title: contact
+- title: Contact
   url: /contact/
+  
