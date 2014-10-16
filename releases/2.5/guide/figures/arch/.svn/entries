@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="12090"
+   name=""
+   committed-date="2009-06-15T23:10:42.202399Z"
+   url="http://cuzco.sdsc.edu:9080/misc/inca/subversion/inca/trunk/pubs/docs/src/figures/arch"
+   last-author="kericson"
+   kind="dir"
+   uuid="7dba3f4a-8be6-0310-8b3b-b4fec25ea7f3"
+   revision="12403"/>
+<entry
+   committed-rev="12089"
+   name="reporter-schema.jpg"
+   text-time="2009-07-15T02:42:58.000000Z"
+   committed-date="2009-06-15T23:05:10.507946Z"
+   checksum="3438ee2800864d655779735dcd41fe44"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:57.000000Z"/>
+<entry
+   committed-rev="12089"
+   name="arch-reporters.jpg"
+   text-time="2009-07-15T02:42:58.000000Z"
+   committed-date="2009-06-15T23:05:10.507946Z"
+   checksum="f5ff86239921ab1b39125c3f5b00bd5b"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:57.000000Z"/>
+<entry
+   committed-rev="12090"
+   name="ug-incat-icon.png"
+   text-time="2009-07-15T02:42:58.000000Z"
+   committed-date="2009-06-15T23:10:42.202399Z"
+   checksum="06e28ea7040bc337332d16a99150a08e"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:57.000000Z"/>
+<entry
+   committed-rev="12090"
+   name="ug-agent-icon.png"
+   text-time="2009-07-15T02:42:58.000000Z"
+   committed-date="2009-06-15T23:10:42.202399Z"
+   checksum="cf28931456e41ceac96dba24ba80b38b"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:57.000000Z"/>
+<entry
+   committed-rev="12090"
+   name="ug-reporter-icon.png"
+   text-time="2009-07-15T02:42:58.000000Z"
+   committed-date="2009-06-15T23:10:42.202399Z"
+   checksum="4cfd6de7fcdcd7703eca97bcfb3a149c"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:57.000000Z"/>
+<entry
+   committed-rev="12089"
+   name="arch-consumer.jpg"
+   text-time="2009-07-15T02:42:58.000000Z"
+   committed-date="2009-06-15T23:05:10.507946Z"
+   checksum="da5b9eb0c080fbc00b7871751cf8d8b4"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:58.000000Z"/>
+<entry
+   committed-rev="12089"
+   name="arch-incat.jpg"
+   text-time="2009-07-15T02:42:58.000000Z"
+   committed-date="2009-06-15T23:05:10.507946Z"
+   checksum="38a9bb0f29f44eed11373bfc31863b06"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:58.000000Z"/>
+<entry
+   committed-rev="12089"
+   name="arch.jpg"
+   text-time="2009-07-15T02:42:59.000000Z"
+   committed-date="2009-06-15T23:05:10.507946Z"
+   checksum="d67fc1d4ab934914757ae3ee2028f0a1"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:58.000000Z"/>
+<entry
+   committed-rev="12090"
+   name="ug-manager-icon.png"
+   text-time="2009-07-15T02:42:59.000000Z"
+   committed-date="2009-06-15T23:10:42.202399Z"
+   checksum="f7f35ef06fdc43a0ead2afbbca0e1f01"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:58.000000Z"/>
+<entry
+   committed-rev="12090"
+   name="ug-report-icon.png"
+   text-time="2009-07-15T02:42:59.000000Z"
+   committed-date="2009-06-15T23:10:42.202399Z"
+   checksum="a0042d23c7525198e4cb5ba84b9beeff"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:58.000000Z"/>
+<entry
+   committed-rev="12090"
+   name="ug-depot-icon.png"
+   text-time="2009-07-15T02:42:59.000000Z"
+   committed-date="2009-06-15T23:10:42.202399Z"
+   checksum="8a622892dd3ff75f5d691d6e1a08d234"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:58.000000Z"/>
+<entry
+   committed-rev="12089"
+   name="arch-install.jpg"
+   text-time="2009-07-15T02:42:59.000000Z"
+   committed-date="2009-06-15T23:05:10.507946Z"
+   checksum="085937287b8cbe215eac6699f7c85c8d"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:58.000000Z"/>
+<entry
+   committed-rev="12090"
+   name="ug-repository-icon.png"
+   text-time="2009-07-15T02:42:59.000000Z"
+   committed-date="2009-06-15T23:10:42.202399Z"
+   checksum="769c46950ab73c7e7d4f27cbec761d17"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:58.000000Z"/>
+<entry
+   committed-rev="12089"
+   name="arch-proxy.jpg"
+   text-time="2009-07-15T02:42:59.000000Z"
+   committed-date="2009-06-15T23:05:10.507946Z"
+   checksum="089a5ad0be7203daf3472422a087eee3"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:58.000000Z"/>
+<entry
+   committed-rev="12090"
+   name="ug-suite-icon.png"
+   text-time="2009-07-15T02:42:59.000000Z"
+   committed-date="2009-06-15T23:10:42.202399Z"
+   checksum="8ab6f0802eb4f487d640294f29cfa47b"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:58.000000Z"/>
+<entry
+   committed-rev="12090"
+   name="ug-consumer-icon.png"
+   text-time="2009-07-15T02:42:59.000000Z"
+   committed-date="2009-06-15T23:10:42.202399Z"
+   checksum="4eb98db572b19670cd84b7fb171f9f22"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:58.000000Z"/>
+</wc-entries>

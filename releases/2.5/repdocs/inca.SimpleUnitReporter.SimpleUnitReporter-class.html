@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>inca.SimpleUnitReporter.SimpleUnitReporter</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="inca-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="inca-module.html">Package&nbsp;inca</a> ::
+        <a href="inca.SimpleUnitReporter-module.html">Module&nbsp;SimpleUnitReporter</a> ::
+        Class&nbsp;SimpleUnitReporter
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="inca.SimpleUnitReporter.SimpleUnitReporter-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class SimpleUnitReporter</h1><p class="nomargin-top"><span class="codelink"><a href="inca.SimpleUnitReporter-pysrc.html#SimpleUnitReporter">source&nbsp;code</a></span></p>
+<pre class="base-tree">
+<a href="inca.Reporter.Reporter-class.html">Reporter.Reporter</a> --+
+                    |
+                   <strong class="uidshort">SimpleUnitReporter</strong>
+</pre>
+
+<dl><dt>Known Subclasses:</dt>
+<dd>
+      <ul class="subclass-list">
+<li><a href="inca.GlobusUnitReporter.GlobusUnitReporter-class.html">GlobusUnitReporter.GlobusUnitReporter</a></li>  </ul>
+</dd></dl>
+
+<hr />
+<p>SimpleUnitReporter - Module for creating simple unit reporters:</p>
+<pre class="literalblock">
+ from inca.SimpleUnitReporter import SimpleUnitReporter
+ reporter = SimpleUnitReporter(
+   name = 'Reporter Name',
+   version = 0.1,
+   description = 'A really helpful reporter description',
+   url = 'http://url.to.more.reporter.info'
+   unit_name = 'What this reporter tests'
+ )
+</pre>
+  <p>This module is a subclass of Reporter that provides convenience 
+  methods for testing the successful operation of a software package.  If 
+  the test completes, the report body contains:</p>
+<pre class="literalblock">
+ &lt;unitTest&gt;
+   &lt;ID&gt;unitX&lt;/ID&gt;
+ &lt;/unitTest&gt;
+</pre>
+  <p>Otherwise, the exit_status of the report is set to false.</p>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="inca.SimpleUnitReporter.SimpleUnitReporter-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">**attributes</span>)</span><br />
+      Class constructor that returns a new SimpleUnitReporter object.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.SimpleUnitReporter-pysrc.html#SimpleUnitReporter.__init__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getUnitName"></a><span class="summary-sig-name">getUnitName</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Return the name of the unit being tested.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.SimpleUnitReporter-pysrc.html#SimpleUnitReporter.getUnitName">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="inca.SimpleUnitReporter.SimpleUnitReporter-class.html#reportBody" class="summary-sig-name">reportBody</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Constructs and returns the body of the reporter.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.SimpleUnitReporter-pysrc.html#SimpleUnitReporter.reportBody">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="setUnitName"></a><span class="summary-sig-name">setUnitName</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">name</span>)</span><br />
+      Set the name of the unit being tested to name.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.SimpleUnitReporter-pysrc.html#SimpleUnitReporter.setUnitName">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="unitFailure"></a><span class="summary-sig-name">unitFailure</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">msg</span>)</span><br />
+      Sets the result of this unit test to be failed with failure message 
+      msg.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.SimpleUnitReporter-pysrc.html#SimpleUnitReporter.unitFailure">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="unitSuccess"></a><span class="summary-sig-name">unitSuccess</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Sets the result of this unit test to be successful.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.SimpleUnitReporter-pysrc.html#SimpleUnitReporter.unitSuccess">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="inca.Reporter.Reporter-class.html">Reporter.Reporter</a></code></b>:
+      <code><a href="inca.Reporter.Reporter-class.html#__del__">__del__</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#addArg">addArg</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#addDependency">addDependency</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#argValue">argValue</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#argValues">argValues</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#compiledProgramOutput">compiledProgramOutput</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#compiledProgramStatusOutput">compiledProgramStatusOutput</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#failPrintAndExit">failPrintAndExit</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#getBody">getBody</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#getCompleted">getCompleted</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#getCwd">getCwd</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#getDescription">getDescription</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#getFailMessage">getFailMessage</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#getName">getName</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#getUrl">getUrl</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#getVersion">getVersion</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#log">log</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#loggedCommandOutput">loggedCommandOutput</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#loggedCommandStatusOutput">loggedCommandStatusOutput</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#printReport">printReport</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#processArgv">processArgv</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#report">report</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#setBody">setBody</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#setCompleted">setCompleted</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#setCwd">setCwd</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#setDescription">setDescription</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#setFailMessage">setFailMessage</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#setName">setName</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#setResult">setResult</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#setUrl">setUrl</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#setVersion">setVersion</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#tempFile">tempFile</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#xmlElement">xmlElement</a></code>
+      </p>
+    <div class="private">    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="inca.Reporter.Reporter-class.html">Reporter.Reporter</a></code></b> (private):
+      <code><a href="inca.Reporter.Reporter-class.html#_helpXml" onclick="show_private();">_helpXml</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#_iso8601Time" onclick="show_private();">_iso8601Time</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#_reportXml" onclick="show_private();">_reportXml</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#_timeoutException" onclick="show_private();">_timeoutException</a></code>
+      </p></div>
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Method Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-MethodDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="__init__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">**attributes</span>)</span>
+    <br /><em class="fname">(Constructor)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="inca.SimpleUnitReporter-pysrc.html#SimpleUnitReporter.__init__">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Class constructor that returns a new SimpleUnitReporter object.  The 
+  constructor supports the following parameter in addition to those 
+  supported by Reporter:</p>
+<pre class="literalblock">
+ unit_name
+   the name of the unit being tested; default ''.
+</pre>
+  <dl class="fields">
+    <dt>Overrides:
+        <a href="inca.Reporter.Reporter-class.html#__init__">Reporter.Reporter.__init__</a>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="reportBody"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">reportBody</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="inca.SimpleUnitReporter-pysrc.html#SimpleUnitReporter.reportBody">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Constructs and returns the body of the reporter.</p>
+  <dl class="fields">
+    <dt>Overrides:
+        <a href="inca.Reporter.Reporter-class.html#reportBody">Reporter.Reporter.reportBody</a>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="inca-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Fri Aug 21 14:47:15 2009
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

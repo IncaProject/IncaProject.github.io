@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="12086"
+   name=""
+   committed-date="2009-06-15T22:51:42.296279Z"
+   url="http://cuzco.sdsc.edu:9080/misc/inca/subversion/inca/trunk/pubs/docs/src/figures/archive"
+   last-author="kericson"
+   kind="dir"
+   uuid="7dba3f4a-8be6-0310-8b3b-b4fec25ea7f3"
+   revision="12403"/>
+<entry
+   committed-rev="12082"
+   name="ug-incat-series-dialog.png"
+   text-time="2009-07-15T02:42:39.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="05ebba0b8ae45a0307e54eaab28ab3d2"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:36.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="ug-incat-repositories.png"
+   text-time="2009-07-15T02:42:39.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="3045fc41b157fdf9fe74496a4997def0"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:36.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="reporter_manager.png"
+   text-time="2009-07-15T02:42:39.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="c0bc25e4020565fbb6618ace545c5e0a"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:36.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="incat_default.jpg"
+   text-time="2009-07-15T02:42:39.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="e71f55dbad1b601e76bd4f487beeb0d0"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:36.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="depot_config_update.jpg"
+   text-time="2009-07-15T02:42:39.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="34fc9436ef2577c6ce912345f62805fc"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:36.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="reporter_agent_lifecycle.png"
+   text-time="2009-07-15T02:42:39.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="40414d37551d7e8f2ea5176d732280af"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:36.000000Z"/>
+<entry
+   committed-rev="12086"
+   name="googlePopUp.png"
+   text-time="2009-07-15T02:42:39.000000Z"
+   committed-date="2009-06-15T22:51:42.296279Z"
+   checksum="aa17eb6e7010e38fbedb6c5ced1b6dd5"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:36.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="incat_repositories.jpg"
+   text-time="2009-07-15T02:42:39.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="53a2006c00a2060a7da3b24dab20ca68"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:36.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="ug-incat-resource-configuration.png"
+   text-time="2009-07-15T02:42:39.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="a37bad201e88d205bcd0d1848f705a60"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:36.000000Z"/>
+<entry
+   committed-rev="12086"
+   name="comparison.jpg"
+   text-time="2009-07-15T02:42:40.000000Z"
+   committed-date="2009-06-15T22:51:42.296279Z"
+   checksum="0bf1ed802848285fae996ecfb458540d"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:36.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="ug-consumer-java-details.png"
+   text-time="2009-07-15T02:42:40.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="46ae7ee0b8d3a9c6f6e5579aa1e90878"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:36.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="depot.jpg"
+   text-time="2009-07-15T02:42:40.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="7bff9cc09b344364fdd328226fc8ef1c"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:37.000000Z"/>
+<entry
+   committed-rev="12086"
+   name="reporter_details.tiff"
+   text-time="2009-07-15T02:42:40.000000Z"
+   committed-date="2009-06-15T22:51:42.296279Z"
+   checksum="c5918bdfc70a369a375524e4edc8523c"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:37.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="reporter_manager_lifecycle.png"
+   text-time="2009-07-15T02:42:40.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="f59438de9558aed4dad3fcb165033f18"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:37.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="ug-incat-resource-dialog2.png"
+   text-time="2009-07-15T02:42:40.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="b8ea70290e11c72c5f8388f0e007c3c3"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:37.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="incat_add_series.jpg"
+   text-time="2009-07-15T02:42:40.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="66e5ab063a88410a85d80852d4ac4ba6"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:37.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="incat_retrieve_agent.jpg"
+   text-time="2009-07-15T02:42:40.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="c0338208d69ea6844b98045c7abfdf5a"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:37.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="consumer_reporter_details.jpg"
+   text-time="2009-07-15T02:42:40.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="2d8eb70256b40016b45bcbae00701dbe"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:37.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="ug-incat-suites.png"
+   text-time="2009-07-15T02:42:40.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="ca77b763fc992c7b6eaecb52e5b4c505"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:37.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="ug-consumer-default-results-empty.png"
+   text-time="2009-07-15T02:42:40.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="19cd87bbc12a91ef24093fc2bd0cfefa"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:37.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="stack-status.jpg"
+   text-time="2009-07-15T02:42:40.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="698ec46ee9ca798cf976180ae641a5df"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:37.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="depot_decision_high.jpg"
+   text-time="2009-07-15T02:42:40.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="a7b24aa223bbe2baa9cba39aa0291ba8"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:37.000000Z"/>
+<entry
+   committed-rev="12086"
+   name="header.jpg"
+   text-time="2009-07-15T02:42:40.000000Z"
+   committed-date="2009-06-15T22:51:42.296279Z"
+   checksum="f0b42661987a05dabbc8c96eb16bf6e0"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:37.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="ug-incat-macrodef.png"
+   text-time="2009-07-15T02:42:40.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="f5c6afc48b9b08eb4c26bfdbcecdcb63"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:37.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="ug-testing.png"
+   text-time="2009-07-15T02:42:40.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="2d6aa9c23063ec9b87cf55fd82f41513"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:37.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="depot_lifecycle.jpg"
+   text-time="2009-07-15T02:42:40.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="e8dba045cd6ff02963f96df65ab97703"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:37.000000Z"/>
+<entry
+   committed-rev="12086"
+   name="errorJsp.gif"
+   text-time="2009-07-15T02:42:41.000000Z"
+   committed-date="2009-06-15T22:51:42.296279Z"
+   checksum="0ce749aab589cb224392a47c252c61c9"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:37.000000Z"/>
+<entry
+   committed-rev="12086"
+   name="summary_sm.jpg"
+   text-time="2009-07-15T02:42:41.000000Z"
+   committed-date="2009-06-15T22:51:42.296279Z"
+   checksum="16205a46e6f997673b57e704d7b8692e"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:37.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="ug-incat-resource-dialog.png"
+   text-time="2009-07-15T02:42:41.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="1ec7799486fed73404f9c0d1f8c8d37a"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:37.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="data_shared_resource.pdf"
+   text-time="2009-07-15T02:42:41.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="6986db3373c76928350b92dd5aeffa6f"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:38.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="consumer-editxml.jpg"
+   text-time="2009-07-15T02:42:41.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="bdc5dec26ac14f210246a5f21bc453ab"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:38.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="ug-consumer-startpage.png"
+   text-time="2009-07-15T02:42:41.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="e0a953c0db0612511891b5f78f0c1b1c"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:38.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="ug-manualEmail.png"
+   text-time="2009-07-15T02:42:41.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="d36321fa7891dfd976a3e8da8f9b8743"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:38.000000Z"/>
+<entry
+   committed-rev="12086"
+   name="graphSampleSuite.gif"
+   text-time="2009-07-15T02:42:41.000000Z"
+   committed-date="2009-06-15T22:51:42.296279Z"
+   checksum="c349b9047166e410c40f19e6769d4db2"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:38.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="depot_report_update.jpg"
+   text-time="2009-07-15T02:42:41.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="f8393184bc438817b2161d463cae6238"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:38.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="scenario_singleVO.jpg"
+   text-time="2009-07-15T02:42:41.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="a018521c317b2663ae552cbc3e0b1dba"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:38.000000Z"/>
+<entry
+   committed-rev="12086"
+   name="reporter_help.jpg"
+   text-time="2009-07-15T02:42:41.000000Z"
+   committed-date="2009-06-15T22:51:42.296279Z"
+   checksum="e74ebdb19944b27b485ebea3ff1c621b"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:38.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="depot_no_details.jpg"
+   text-time="2009-07-15T02:42:41.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="77bf051e6c40aaf7c32d26a8aeef0e37"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:38.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="scenario_overlappingVO.jpg"
+   text-time="2009-07-15T02:42:41.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="82dd4da6a8142408ca7dc5917eba6165"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:38.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="incat_add_rg1.jpg"
+   text-time="2009-07-15T02:42:41.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="e710ba16995c5da62281f023d231955b"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:38.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="incat_add_rg2.jpg"
+   text-time="2009-07-15T02:42:41.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="b93b7a6551205a7859e5a233eb15a1cb"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:38.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="ug-sampleapp2.png"
+   text-time="2009-07-15T02:42:41.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="be06d10522267f67b68ac0552f936ecc"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:38.000000Z"/>
+<entry
+   committed-rev="12086"
+   name="menu_summaryreport.png"
+   text-time="2009-07-15T02:42:41.000000Z"
+   committed-date="2009-06-15T22:51:42.296279Z"
+   checksum="b0c8166f91e2a7bc9b8c911798b8fe5c"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:38.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="repository_thumbnail.jpg"
+   text-time="2009-07-15T02:42:41.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="b0049606eb0639677b404c73cd936637"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:38.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="reporter_agent_thumbnail.jpg"
+   text-time="2009-07-15T02:42:41.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="908f9adda99ae1b6f93712750ebc5409"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:38.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="ug-incat-comparison.png"
+   text-time="2009-07-15T02:42:41.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="083de1f4ed37eeb6bb66cba76f43dfe0"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:38.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="reporter_agent.png"
+   text-time="2009-07-15T02:42:42.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="4ce9f39510d196eff91475139353f9ca"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:38.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="incat_add_macro.jpg"
+   text-time="2009-07-15T02:42:42.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="63599668b3fdf7ac3f2b414fe2557f82"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:38.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="ug-incat-macrouse.png"
+   text-time="2009-07-15T02:42:42.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="8961904c7ebb4c778e244cd58aa765a6"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:39.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="ug-consumer-default-results.png"
+   text-time="2009-07-15T02:42:42.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="52d17418782350231fffd569892927f5"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:39.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="consumer_reporter_summary.jpg"
+   text-time="2009-07-15T02:42:42.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="f301235ab2989b3004875a47e2230ffd"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:39.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="incat_resource_config.jpg"
+   text-time="2009-07-15T02:42:42.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="4f6f95bb301a9d8e487ac9e63ba24040"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:39.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="incat_suite_config.jpg"
+   text-time="2009-07-15T02:42:42.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="e788534fc5e146f7d4be9bdd8f57e76e"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:39.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="ug-consumer-startpage-empty.png"
+   text-time="2009-07-15T02:42:42.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="bbc56414b0847278c78d14007bd442c1"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:39.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="reporter_manager_thumbnail.jpg"
+   text-time="2009-07-15T02:42:42.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="d5d91695b89139314634d4939dcab82e"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:39.000000Z"/>
+<entry
+   committed-rev="12082"
+   name="ug-sampleapp.png"
+   text-time="2009-07-15T02:42:42.000000Z"
+   committed-date="2009-06-15T22:29:21.596514Z"
+   checksum="26913b8480ae9f55930977878ba229c2"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:39.000000Z"/>
+</wc-entries>

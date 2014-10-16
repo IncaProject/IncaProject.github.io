@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="12206"
+   name=""
+   committed-date="2009-07-15T02:21:34.291389Z"
+   url="http://cuzco.sdsc.edu:9080/misc/inca/subversion/inca/trunk/pubs/docs/src/figures/graffle/incat-annotated-all2all.graffle"
+   last-author="kericson"
+   kind="dir"
+   uuid="7dba3f4a-8be6-0310-8b3b-b4fec25ea7f3"
+   revision="12403"/>
+<entry
+   name="QuickLook"
+   kind="dir"/>
+<entry
+   committed-rev="12202"
+   name="data.plist"
+   text-time="2009-07-15T02:42:44.000000Z"
+   committed-date="2009-07-14T23:09:02.749792Z"
+   checksum="67991a9dd91501e48d8e0701bafa37c3"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:44.000000Z"/>
+<entry
+   committed-rev="12202"
+   name="image31.tiff"
+   text-time="2009-07-15T02:42:44.000000Z"
+   committed-date="2009-07-14T23:09:02.749792Z"
+   checksum="187ae788fb67d7e38ce0fc4f2cceceec"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:44.000000Z"/>
+</wc-entries>

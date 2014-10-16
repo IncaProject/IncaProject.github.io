@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>inca.PerformanceReporter.PerformanceReporter</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="inca-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="inca-module.html">Package&nbsp;inca</a> ::
+        <a href="inca.PerformanceReporter-module.html">Module&nbsp;PerformanceReporter</a> ::
+        Class&nbsp;PerformanceReporter
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="inca.PerformanceReporter.PerformanceReporter-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class PerformanceReporter</h1><p class="nomargin-top"><span class="codelink"><a href="inca.PerformanceReporter-pysrc.html#PerformanceReporter">source&nbsp;code</a></span></p>
+<pre class="base-tree">
+<a href="inca.Reporter.Reporter-class.html">Reporter.Reporter</a> --+
+                    |
+                   <strong class="uidshort">PerformanceReporter</strong>
+</pre>
+
+<hr />
+<p>PerformanceReporter - Convenience module for performance-related 
+  reporters:</p>
+<pre class="literalblock">
+ from inca.PerformanceReporter import PerformanceReporter, PerformanceBenchmark
+ performance = PerformanceReporter(
+   name = 'My performance reporter',
+   version = 1,
+   description = 'Measures host performance',
+   url = 'http://inca.sdsc.edu',
+   measurement_name = 'host performance'
+ )
+ ...
+ benchmark = PerformanceBenchmark()
+ benchmark.addParameter('num_cpus', 16)
+ benchmark.addStatistic('bandwidth', 10, 'Mb/s')
+ performance.addBenchmark('sample', benchmark)
+ reporter.printReport()
+</pre>
+  <p>Module for writing performance related reporters.  A performance 
+  reporter has one or more benchmarks.  Each benchmark has one or more 
+  statistics (i.e., results) and can further be described with one or more 
+  parameters. For example:</p>
+<pre class="literalblock">
+ &lt;performance&gt; 
+   &lt;ID&gt;some_id&lt;/ID&gt;
+   &lt;benchmark&gt;
+     &lt;ID&gt;sample&lt;/ID&gt;
+     &lt;parameters&gt;
+       &lt;ID&gt;parameters&lt;/ID&gt;
+       &lt;parameter&gt;
+         &lt;ID&gt;num_cpus&lt;/ID&gt;
+         &lt;value&gt;16&lt;/value&gt;
+       &lt;/parameter&gt;
+     &lt;/parameters&gt;
+     &lt;statistics&gt;
+       &lt;ID&gt;statistics&lt;/ID&gt;
+       &lt;statistic&gt;
+         &lt;ID&gt;bandwidth&lt;/ID&gt;
+         &lt;value&gt;10&lt;/value&gt;
+         &lt;units&gt;Mb/s&lt;/units&gt;
+       &lt;/statistic&gt;
+     &lt;/statistics&gt;
+   &lt;/benchmark&gt;
+ &lt;/performance&gt;
+</pre>
+  <p>By default, the exit status of the reporter will be set to true (i.e.,
+  success).</p>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="inca.PerformanceReporter.PerformanceReporter-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">**attrs</span>)</span><br />
+      Class constructor that returns a new PerformanceReporter object.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.PerformanceReporter-pysrc.html#PerformanceReporter.__init__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="inca.PerformanceReporter.PerformanceReporter-class.html#addBenchmark" class="summary-sig-name">addBenchmark</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">name</span>,
+        <span class="summary-sig-arg">benchmark</span>)</span><br />
+      Add a benchmark to the reporter.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.PerformanceReporter-pysrc.html#PerformanceReporter.addBenchmark">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="addNewBenchmark"></a><span class="summary-sig-name">addNewBenchmark</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">name</span>)</span><br />
+      A convenience that combines the allocation of a benchmark and its 
+      addition to the reporter.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.PerformanceReporter-pysrc.html#PerformanceReporter.addNewBenchmark">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getMeasurementName"></a><span class="summary-sig-name">getMeasurementName</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Returns the name of the performance metric measured by the reporter.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.PerformanceReporter-pysrc.html#PerformanceReporter.getMeasurementName">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="inca.PerformanceReporter.PerformanceReporter-class.html#reportBody" class="summary-sig-name">reportBody</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Constructs and returns the body of the reporter.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.PerformanceReporter-pysrc.html#PerformanceReporter.reportBody">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="setMeasurementName"></a><span class="summary-sig-name">setMeasurementName</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">name</span>)</span><br />
+      Sets the name of the performance metric measured by the reporter.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.PerformanceReporter-pysrc.html#PerformanceReporter.setMeasurementName">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="inca.Reporter.Reporter-class.html">Reporter.Reporter</a></code></b>:
+      <code><a href="inca.Reporter.Reporter-class.html#__del__">__del__</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#addArg">addArg</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#addDependency">addDependency</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#argValue">argValue</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#argValues">argValues</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#compiledProgramOutput">compiledProgramOutput</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#compiledProgramStatusOutput">compiledProgramStatusOutput</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#failPrintAndExit">failPrintAndExit</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#getBody">getBody</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#getCompleted">getCompleted</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#getCwd">getCwd</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#getDescription">getDescription</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#getFailMessage">getFailMessage</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#getName">getName</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#getUrl">getUrl</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#getVersion">getVersion</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#log">log</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#loggedCommandOutput">loggedCommandOutput</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#loggedCommandStatusOutput">loggedCommandStatusOutput</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#printReport">printReport</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#processArgv">processArgv</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#report">report</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#setBody">setBody</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#setCompleted">setCompleted</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#setCwd">setCwd</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#setDescription">setDescription</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#setFailMessage">setFailMessage</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#setName">setName</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#setResult">setResult</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#setUrl">setUrl</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#setVersion">setVersion</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#tempFile">tempFile</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#xmlElement">xmlElement</a></code>
+      </p>
+    <div class="private">    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="inca.Reporter.Reporter-class.html">Reporter.Reporter</a></code></b> (private):
+      <code><a href="inca.Reporter.Reporter-class.html#_helpXml" onclick="show_private();">_helpXml</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#_iso8601Time" onclick="show_private();">_iso8601Time</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#_reportXml" onclick="show_private();">_reportXml</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#_timeoutException" onclick="show_private();">_timeoutException</a></code>
+      </p></div>
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Method Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-MethodDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="__init__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">**attrs</span>)</span>
+    <br /><em class="fname">(Constructor)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="inca.PerformanceReporter-pysrc.html#PerformanceReporter.__init__">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Class constructor that returns a new PerformanceReporter object. The 
+  constructor supports the following parameter in addition to those 
+  supported by Reporter:</p>
+<pre class="literalblock">
+ measurement_name
+   the name of the performance metric measured by the reporter;
+   default ''.
+</pre>
+  <dl class="fields">
+    <dt>Overrides:
+        <a href="inca.Reporter.Reporter-class.html#__init__">Reporter.Reporter.__init__</a>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="addBenchmark"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">addBenchmark</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">name</span>,
+        <span class="sig-arg">benchmark</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="inca.PerformanceReporter-pysrc.html#PerformanceReporter.addBenchmark">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Add a benchmark to the reporter.  benchmark is an object of type 
+  PerformanceBenchmark. name identifies the benchmark.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="reportBody"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">reportBody</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="inca.PerformanceReporter-pysrc.html#PerformanceReporter.reportBody">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Constructs and returns the body of the reporter.</p>
+  <dl class="fields">
+    <dt>Overrides:
+        <a href="inca.Reporter.Reporter-class.html#reportBody">Reporter.Reporter.reportBody</a>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="inca-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Thu Jul 10 13:04:57 2008
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

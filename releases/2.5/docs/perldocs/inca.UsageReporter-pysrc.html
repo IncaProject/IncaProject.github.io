@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>inca.UsageReporter</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="inca-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="inca-module.html">Package&nbsp;inca</a> ::
+        Module&nbsp;UsageReporter
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="inca.UsageReporter-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="inca.UsageReporter-module.html">Module inca.UsageReporter</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno">  1</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-0" class="py-name" targets="Package inca=inca-module.html"><a title="inca" class="py-name" href="#" onclick="return doclink('link-0', 'inca', 'link-0');">inca</a></tt><tt class="py-op">.</tt><tt id="link-1" class="py-name" targets="Module inca.Reporter=inca.Reporter-module.html,Class inca.Reporter.Reporter=inca.Reporter.Reporter-class.html"><a title="inca.Reporter
+inca.Reporter.Reporter" class="py-name" href="#" onclick="return doclink('link-1', 'Reporter', 'link-1');">Reporter</a></tt> <tt class="py-keyword">import</tt> <tt id="link-2" class="py-name"><a title="inca.Reporter
+inca.Reporter.Reporter" class="py-name" href="#" onclick="return doclink('link-2', 'Reporter', 'link-1');">Reporter</a></tt> </tt>
+<a name="L2"></a><tt class="py-lineno">  2</tt>  <tt class="py-line"> </tt>
+<a name="UsageReporter"></a><div id="UsageReporter-def"><a name="L3"></a><tt class="py-lineno">  3</tt> <a class="py-toggle" href="#" id="UsageReporter-toggle" onclick="return toggle('UsageReporter');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="inca.UsageReporter.UsageReporter-class.html">UsageReporter</a><tt class="py-op">(</tt><tt class="py-base-class">Reporter</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="UsageReporter-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="UsageReporter-expanded"><a name="L4"></a><tt class="py-lineno">  4</tt>  <tt class="py-line">  <tt class="py-docstring">"""Usage - Module for creating simple usage reports::</tt> </tt>
+<a name="L5"></a><tt class="py-lineno">  5</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L6"></a><tt class="py-lineno">  6</tt>  <tt class="py-line"><tt class="py-docstring">       from inca.UsageReporter import UsageReporter</tt> </tt>
+<a name="L7"></a><tt class="py-lineno">  7</tt>  <tt class="py-line"><tt class="py-docstring">       reporter = new UsageReporter(</tt> </tt>
+<a name="L8"></a><tt class="py-lineno">  8</tt>  <tt class="py-line"><tt class="py-docstring">         name = 'My Reporter',</tt> </tt>
+<a name="L9"></a><tt class="py-lineno">  9</tt>  <tt class="py-line"><tt class="py-docstring">         version = 0.1,</tt> </tt>
+<a name="L10"></a><tt class="py-lineno"> 10</tt>  <tt class="py-line"><tt class="py-docstring">         description = 'What my reporter does',</tt> </tt>
+<a name="L11"></a><tt class="py-lineno"> 11</tt>  <tt class="py-line"><tt class="py-docstring">         url = 'http://some.where/'</tt> </tt>
+<a name="L12"></a><tt class="py-lineno"> 12</tt>  <tt class="py-line"><tt class="py-docstring">       )</tt> </tt>
+<a name="L13"></a><tt class="py-lineno"> 13</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L14"></a><tt class="py-lineno"> 14</tt>  <tt class="py-line"><tt class="py-docstring">     This module is a subclass of inca.Reporter that provides a simple schema</tt> </tt>
+<a name="L15"></a><tt class="py-lineno"> 15</tt>  <tt class="py-line"><tt class="py-docstring">     for reporting usage data.  The reporter will return the following body if</tt> </tt>
+<a name="L16"></a><tt class="py-lineno"> 16</tt>  <tt class="py-line"><tt class="py-docstring">     the reporter is successful::</tt> </tt>
+<a name="L17"></a><tt class="py-lineno"> 17</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L18"></a><tt class="py-lineno"> 18</tt>  <tt class="py-line"><tt class="py-docstring">       &lt;usage&gt;</tt> </tt>
+<a name="L19"></a><tt class="py-lineno"> 19</tt>  <tt class="py-line"><tt class="py-docstring">         &lt;entry&gt;</tt> </tt>
+<a name="L20"></a><tt class="py-lineno"> 20</tt>  <tt class="py-line"><tt class="py-docstring">           &lt;type&gt;type1&lt;/type&gt;</tt> </tt>
+<a name="L21"></a><tt class="py-lineno"> 21</tt>  <tt class="py-line"><tt class="py-docstring">           &lt;name&gt;foo&lt;/name&gt;</tt> </tt>
+<a name="L22"></a><tt class="py-lineno"> 22</tt>  <tt class="py-line"><tt class="py-docstring">           &lt;statistics&gt;</tt> </tt>
+<a name="L23"></a><tt class="py-lineno"> 23</tt>  <tt class="py-line"><tt class="py-docstring">             &lt;statistic&gt;</tt> </tt>
+<a name="L24"></a><tt class="py-lineno"> 24</tt>  <tt class="py-line"><tt class="py-docstring">               &lt;name&gt;count&lt;/name&gt;</tt> </tt>
+<a name="L25"></a><tt class="py-lineno"> 25</tt>  <tt class="py-line"><tt class="py-docstring">               &lt;value&gt;9&lt;/value&gt;</tt> </tt>
+<a name="L26"></a><tt class="py-lineno"> 26</tt>  <tt class="py-line"><tt class="py-docstring">             &lt;/statistic&gt;</tt> </tt>
+<a name="L27"></a><tt class="py-lineno"> 27</tt>  <tt class="py-line"><tt class="py-docstring">           &lt;/statistics&gt;</tt> </tt>
+<a name="L28"></a><tt class="py-lineno"> 28</tt>  <tt class="py-line"><tt class="py-docstring">         &lt;/entry&gt;</tt> </tt>
+<a name="L29"></a><tt class="py-lineno"> 29</tt>  <tt class="py-line"><tt class="py-docstring">         &lt;entry&gt;</tt> </tt>
+<a name="L30"></a><tt class="py-lineno"> 30</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L31"></a><tt class="py-lineno"> 31</tt>  <tt class="py-line"><tt class="py-docstring">         .</tt> </tt>
+<a name="L32"></a><tt class="py-lineno"> 32</tt>  <tt class="py-line"><tt class="py-docstring">         .</tt> </tt>
+<a name="L33"></a><tt class="py-lineno"> 33</tt>  <tt class="py-line"><tt class="py-docstring">         .</tt> </tt>
+<a name="L34"></a><tt class="py-lineno"> 34</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L35"></a><tt class="py-lineno"> 35</tt>  <tt class="py-line"><tt class="py-docstring">       &lt;/usage&gt;</tt> </tt>
+<a name="L36"></a><tt class="py-lineno"> 36</tt>  <tt class="py-line"><tt class="py-docstring">  """</tt> </tt>
+<a name="L37"></a><tt class="py-lineno"> 37</tt>  <tt class="py-line"> </tt>
+<a name="UsageReporter.__init__"></a><div id="UsageReporter.__init__-def"><a name="L38"></a><tt class="py-lineno"> 38</tt> <a class="py-toggle" href="#" id="UsageReporter.__init__-toggle" onclick="return toggle('UsageReporter.__init__');">-</a><tt class="py-line">  <tt class="py-keyword">def</tt> <a class="py-def-name" href="inca.UsageReporter.UsageReporter-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-param">attributes</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="UsageReporter.__init__-collapsed" style="display:none;" pad="+++" indent="++++++"></div><div id="UsageReporter.__init__-expanded"><a name="L39"></a><tt class="py-lineno"> 39</tt>  <tt class="py-line">    <tt class="py-docstring">"""Class constructor that returns a new Usage object.  The constructor</tt> </tt>
+<a name="L40"></a><tt class="py-lineno"> 40</tt>  <tt class="py-line"><tt class="py-docstring">       accepts the parameters supported by inca.Reporter.</tt> </tt>
+<a name="L41"></a><tt class="py-lineno"> 41</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="L42"></a><tt class="py-lineno"> 42</tt>  <tt class="py-line">    <tt id="link-3" class="py-name"><a title="inca.Reporter
+inca.Reporter.Reporter" class="py-name" href="#" onclick="return doclink('link-3', 'Reporter', 'link-1');">Reporter</a></tt><tt class="py-op">.</tt><tt id="link-4" class="py-name" targets="Method inca.GlobusUnitReporter.GlobusUnitReporter.__init__()=inca.GlobusUnitReporter.GlobusUnitReporter-class.html#__init__,Method inca.PerformanceReporter.PerformanceBenchmark.__init__()=inca.PerformanceReporter.PerformanceBenchmark-class.html#__init__,Method inca.PerformanceReporter.PerformanceReporter.__init__()=inca.PerformanceReporter.PerformanceReporter-class.html#__init__,Method inca.Reporter.Reporter.__init__()=inca.Reporter.Reporter-class.html#__init__,Method inca.SimpleUnitReporter.SimpleUnitReporter.__init__()=inca.SimpleUnitReporter.SimpleUnitReporter-class.html#__init__,Method inca.UsageReporter.UsageReporter.__init__()=inca.UsageReporter.UsageReporter-class.html#__init__,Method inca.VersionReporter.VersionReporter.__init__()=inca.VersionReporter.VersionReporter-class.html#__init__"><a title="inca.GlobusUnitReporter.GlobusUnitReporter.__init__
+inca.PerformanceReporter.PerformanceBenchmark.__init__
+inca.PerformanceReporter.PerformanceReporter.__init__
+inca.Reporter.Reporter.__init__
+inca.SimpleUnitReporter.SimpleUnitReporter.__init__
+inca.UsageReporter.UsageReporter.__init__
+inca.VersionReporter.VersionReporter.__init__" class="py-name" href="#" onclick="return doclink('link-4', '__init__', 'link-4');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-name">attributes</tt><tt class="py-op">)</tt> </tt>
+<a name="L43"></a><tt class="py-lineno"> 43</tt>  <tt class="py-line">    <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">entries</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-op">]</tt> </tt>
+<a name="L44"></a><tt class="py-lineno"> 44</tt>  <tt class="py-line">    <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-5" class="py-name" targets="Method inca.Reporter.Reporter.addDependency()=inca.Reporter.Reporter-class.html#addDependency"><a title="inca.Reporter.Reporter.addDependency" class="py-name" href="#" onclick="return doclink('link-5', 'addDependency', 'link-5');">addDependency</a></tt><tt class="py-op">(</tt><tt class="py-string">'inca.UsageReporter'</tt><tt class="py-op">)</tt><tt class="py-op">;</tt> </tt>
+</div><a name="L45"></a><tt class="py-lineno"> 45</tt>  <tt class="py-line"> </tt>
+<a name="UsageReporter.addEntry"></a><div id="UsageReporter.addEntry-def"><a name="L46"></a><tt class="py-lineno"> 46</tt> <a class="py-toggle" href="#" id="UsageReporter.addEntry-toggle" onclick="return toggle('UsageReporter.addEntry');">-</a><tt class="py-line">  <tt class="py-keyword">def</tt> <a class="py-def-name" href="inca.UsageReporter.UsageReporter-class.html#addEntry">addEntry</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">entry</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="UsageReporter.addEntry-collapsed" style="display:none;" pad="+++" indent="++++++"></div><div id="UsageReporter.addEntry-expanded"><a name="L47"></a><tt class="py-lineno"> 47</tt>  <tt class="py-line">    <tt class="py-docstring">"""This method is used to add an entry to the usage report.  It takes a</tt> </tt>
+<a name="L48"></a><tt class="py-lineno"> 48</tt>  <tt class="py-line"><tt class="py-docstring">       dict containing the type and name of the entry as well as a dict of</tt> </tt>
+<a name="L49"></a><tt class="py-lineno"> 49</tt>  <tt class="py-line"><tt class="py-docstring">       statistics.  For example::</tt> </tt>
+<a name="L50"></a><tt class="py-lineno"> 50</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L51"></a><tt class="py-lineno"> 51</tt>  <tt class="py-line"><tt class="py-docstring">         addEntry({</tt> </tt>
+<a name="L52"></a><tt class="py-lineno"> 52</tt>  <tt class="py-line"><tt class="py-docstring">           'type' : 'foo',</tt> </tt>
+<a name="L53"></a><tt class="py-lineno"> 53</tt>  <tt class="py-line"><tt class="py-docstring">           'name' : 'bar',</tt> </tt>
+<a name="L54"></a><tt class="py-lineno"> 54</tt>  <tt class="py-line"><tt class="py-docstring">           'stats' : {</tt> </tt>
+<a name="L55"></a><tt class="py-lineno"> 55</tt>  <tt class="py-line"><tt class="py-docstring">             'count' : 1,</tt> </tt>
+<a name="L56"></a><tt class="py-lineno"> 56</tt>  <tt class="py-line"><tt class="py-docstring">             'blort' : 'baz'</tt> </tt>
+<a name="L57"></a><tt class="py-lineno"> 57</tt>  <tt class="py-line"><tt class="py-docstring">           }</tt> </tt>
+<a name="L58"></a><tt class="py-lineno"> 58</tt>  <tt class="py-line"><tt class="py-docstring">         })</tt> </tt>
+<a name="L59"></a><tt class="py-lineno"> 59</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L60"></a><tt class="py-lineno"> 60</tt>  <tt class="py-line"><tt class="py-docstring">       Will create an entry of type 'foo', with a name of 'bar' and two</tt> </tt>
+<a name="L61"></a><tt class="py-lineno"> 61</tt>  <tt class="py-line"><tt class="py-docstring">       statistics, count with a value of 1 and 'blort' with a value of 'baz'.</tt> </tt>
+<a name="L62"></a><tt class="py-lineno"> 62</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="L63"></a><tt class="py-lineno"> 63</tt>  <tt class="py-line">    <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">entries</tt><tt class="py-op">.</tt><tt class="py-name">append</tt><tt class="py-op">(</tt><tt class="py-name">entry</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L64"></a><tt class="py-lineno"> 64</tt>  <tt class="py-line"> </tt>
+<a name="UsageReporter.fail"></a><div id="UsageReporter.fail-def"><a name="L65"></a><tt class="py-lineno"> 65</tt> <a class="py-toggle" href="#" id="UsageReporter.fail-toggle" onclick="return toggle('UsageReporter.fail');">-</a><tt class="py-line">  <tt class="py-keyword">def</tt> <a class="py-def-name" href="inca.UsageReporter.UsageReporter-class.html#fail">fail</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">error_msg</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="UsageReporter.fail-collapsed" style="display:none;" pad="+++" indent="++++++"></div><div id="UsageReporter.fail-expanded"><a name="L66"></a><tt class="py-lineno"> 66</tt>  <tt class="py-line">    <tt class="py-docstring">"""This method is used to indicate that the reporter failed.  It takes a</tt> </tt>
+<a name="L67"></a><tt class="py-lineno"> 67</tt>  <tt class="py-line"><tt class="py-docstring">       single arguement which is the error message which will be returned.</tt> </tt>
+<a name="L68"></a><tt class="py-lineno"> 68</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="L69"></a><tt class="py-lineno"> 69</tt>  <tt class="py-line">    <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-6" class="py-name" targets="Method inca.Reporter.Reporter.setResult()=inca.Reporter.Reporter-class.html#setResult"><a title="inca.Reporter.Reporter.setResult" class="py-name" href="#" onclick="return doclink('link-6', 'setResult', 'link-6');">setResult</a></tt><tt class="py-op">(</tt><tt class="py-number">0</tt><tt class="py-op">,</tt> <tt class="py-name">error_msg</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L70"></a><tt class="py-lineno"> 70</tt>  <tt class="py-line"> </tt>
+<a name="UsageReporter.getEntries"></a><div id="UsageReporter.getEntries-def"><a name="L71"></a><tt class="py-lineno"> 71</tt> <a class="py-toggle" href="#" id="UsageReporter.getEntries-toggle" onclick="return toggle('UsageReporter.getEntries');">-</a><tt class="py-line">  <tt class="py-keyword">def</tt> <a class="py-def-name" href="inca.UsageReporter.UsageReporter-class.html#getEntries">getEntries</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="UsageReporter.getEntries-collapsed" style="display:none;" pad="+++" indent="++++++"></div><div id="UsageReporter.getEntries-expanded"><a name="L72"></a><tt class="py-lineno"> 72</tt>  <tt class="py-line">    <tt class="py-docstring">"""Returns a list of all entries that have been added to the reporter."""</tt> </tt>
+<a name="L73"></a><tt class="py-lineno"> 73</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">entries</tt> </tt>
+</div><a name="L74"></a><tt class="py-lineno"> 74</tt>  <tt class="py-line"> </tt>
+<a name="UsageReporter.reportBody"></a><div id="UsageReporter.reportBody-def"><a name="L75"></a><tt class="py-lineno"> 75</tt> <a class="py-toggle" href="#" id="UsageReporter.reportBody-toggle" onclick="return toggle('UsageReporter.reportBody');">-</a><tt class="py-line">  <tt class="py-keyword">def</tt> <a class="py-def-name" href="inca.UsageReporter.UsageReporter-class.html#reportBody">reportBody</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="UsageReporter.reportBody-collapsed" style="display:none;" pad="+++" indent="++++++"></div><div id="UsageReporter.reportBody-expanded"><a name="L76"></a><tt class="py-lineno"> 76</tt>  <tt class="py-line">    <tt class="py-docstring">"""Constructs the body and returns it."""</tt> </tt>
+<a name="L77"></a><tt class="py-lineno"> 77</tt>  <tt class="py-line">    <tt class="py-name">xml</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-op">]</tt> </tt>
+<a name="L78"></a><tt class="py-lineno"> 78</tt>  <tt class="py-line">    <tt class="py-keyword">for</tt> <tt class="py-name">entry</tt> <tt class="py-keyword">in</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">entries</tt><tt class="py-op">:</tt> </tt>
+<a name="L79"></a><tt class="py-lineno"> 79</tt>  <tt class="py-line">      <tt class="py-name">xml</tt><tt class="py-op">.</tt><tt class="py-name">append</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-7" class="py-name" targets="Method inca.Reporter.Reporter.xmlElement()=inca.Reporter.Reporter-class.html#xmlElement"><a title="inca.Reporter.Reporter.xmlElement" class="py-name" href="#" onclick="return doclink('link-7', 'xmlElement', 'link-7');">xmlElement</a></tt><tt class="py-op">(</tt><tt class="py-string">'entry'</tt><tt class="py-op">,</tt> <tt class="py-number">0</tt><tt class="py-op">,</tt> <tt class="py-op">*</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-8" class="py-name" targets="Method inca.UsageReporter.UsageReporter._reportEntry()=inca.UsageReporter.UsageReporter-class.html#_reportEntry"><a title="inca.UsageReporter.UsageReporter._reportEntry" class="py-name" href="#" onclick="return doclink('link-8', '_reportEntry', 'link-8');">_reportEntry</a></tt><tt class="py-op">(</tt><tt class="py-name">entry</tt><tt class="py-op">)</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L80"></a><tt class="py-lineno"> 80</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-9" class="py-name"><a title="inca.Reporter.Reporter.xmlElement" class="py-name" href="#" onclick="return doclink('link-9', 'xmlElement', 'link-7');">xmlElement</a></tt><tt class="py-op">(</tt><tt class="py-string">'usage'</tt><tt class="py-op">,</tt> <tt class="py-number">0</tt><tt class="py-op">,</tt> <tt class="py-op">*</tt><tt class="py-name">xml</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L81"></a><tt class="py-lineno"> 81</tt>  <tt class="py-line"> </tt>
+<a name="UsageReporter.success"></a><div id="UsageReporter.success-def"><a name="L82"></a><tt class="py-lineno"> 82</tt> <a class="py-toggle" href="#" id="UsageReporter.success-toggle" onclick="return toggle('UsageReporter.success');">-</a><tt class="py-line">  <tt class="py-keyword">def</tt> <a class="py-def-name" href="inca.UsageReporter.UsageReporter-class.html#success">success</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="UsageReporter.success-collapsed" style="display:none;" pad="+++" indent="++++++"></div><div id="UsageReporter.success-expanded"><a name="L83"></a><tt class="py-lineno"> 83</tt>  <tt class="py-line">    <tt class="py-docstring">"""This method is called to indicate that the reporter has succeeded."""</tt> </tt>
+<a name="L84"></a><tt class="py-lineno"> 84</tt>  <tt class="py-line">    <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-10" class="py-name"><a title="inca.Reporter.Reporter.setResult" class="py-name" href="#" onclick="return doclink('link-10', 'setResult', 'link-6');">setResult</a></tt><tt class="py-op">(</tt><tt class="py-number">1</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L85"></a><tt class="py-lineno"> 85</tt>  <tt class="py-line"> </tt>
+<a name="UsageReporter._reportStatistics"></a><div id="UsageReporter._reportStatistics-def"><a name="L86"></a><tt class="py-lineno"> 86</tt> <a class="py-toggle" href="#" id="UsageReporter._reportStatistics-toggle" onclick="return toggle('UsageReporter._reportStatistics');">-</a><tt class="py-line">  <tt class="py-keyword">def</tt> <a class="py-def-name" href="inca.UsageReporter.UsageReporter-class.html#_reportStatistics">_reportStatistics</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">stats</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="UsageReporter._reportStatistics-collapsed" style="display:none;" pad="+++" indent="++++++"></div><div id="UsageReporter._reportStatistics-expanded"><a name="L87"></a><tt class="py-lineno"> 87</tt>  <tt class="py-line">    <tt class="py-name">xml</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-op">]</tt> </tt>
+<a name="L88"></a><tt class="py-lineno"> 88</tt>  <tt class="py-line">    <tt class="py-keyword">for</tt> <tt class="py-name">stat</tt> <tt class="py-keyword">in</tt> <tt class="py-name">stats</tt><tt class="py-op">.</tt><tt class="py-name">keys</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L89"></a><tt class="py-lineno"> 89</tt>  <tt class="py-line">      <tt class="py-name">xml</tt><tt class="py-op">.</tt><tt class="py-name">append</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-11" class="py-name"><a title="inca.Reporter.Reporter.xmlElement" class="py-name" href="#" onclick="return doclink('link-11', 'xmlElement', 'link-7');">xmlElement</a></tt><tt class="py-op">(</tt><tt class="py-string">'statistic'</tt><tt class="py-op">,</tt> <tt class="py-number">0</tt><tt class="py-op">,</tt> </tt>
+<a name="L90"></a><tt class="py-lineno"> 90</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-12" class="py-name"><a title="inca.Reporter.Reporter.xmlElement" class="py-name" href="#" onclick="return doclink('link-12', 'xmlElement', 'link-7');">xmlElement</a></tt><tt class="py-op">(</tt><tt class="py-string">'name'</tt><tt class="py-op">,</tt> <tt class="py-number">1</tt><tt class="py-op">,</tt> <tt class="py-name">stat</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L91"></a><tt class="py-lineno"> 91</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-13" class="py-name"><a title="inca.Reporter.Reporter.xmlElement" class="py-name" href="#" onclick="return doclink('link-13', 'xmlElement', 'link-7');">xmlElement</a></tt><tt class="py-op">(</tt><tt class="py-string">'value'</tt><tt class="py-op">,</tt> <tt class="py-number">1</tt><tt class="py-op">,</tt> <tt class="py-name">stats</tt><tt class="py-op">[</tt><tt class="py-name">stat</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L92"></a><tt class="py-lineno"> 92</tt>  <tt class="py-line">      <tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L93"></a><tt class="py-lineno"> 93</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">xml</tt> </tt>
+</div><a name="L94"></a><tt class="py-lineno"> 94</tt>  <tt class="py-line"> </tt>
+<a name="UsageReporter._reportEntry"></a><div id="UsageReporter._reportEntry-def"><a name="L95"></a><tt class="py-lineno"> 95</tt> <a class="py-toggle" href="#" id="UsageReporter._reportEntry-toggle" onclick="return toggle('UsageReporter._reportEntry');">-</a><tt class="py-line">  <tt class="py-keyword">def</tt> <a class="py-def-name" href="inca.UsageReporter.UsageReporter-class.html#_reportEntry">_reportEntry</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">entry</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="UsageReporter._reportEntry-collapsed" style="display:none;" pad="+++" indent="++++++"></div><div id="UsageReporter._reportEntry-expanded"><a name="L96"></a><tt class="py-lineno"> 96</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-op">[</tt> </tt>
+<a name="L97"></a><tt class="py-lineno"> 97</tt>  <tt class="py-line">      <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-14" class="py-name"><a title="inca.Reporter.Reporter.xmlElement" class="py-name" href="#" onclick="return doclink('link-14', 'xmlElement', 'link-7');">xmlElement</a></tt><tt class="py-op">(</tt><tt class="py-string">'type'</tt><tt class="py-op">,</tt> <tt class="py-number">1</tt><tt class="py-op">,</tt> <tt class="py-name">entry</tt><tt class="py-op">[</tt><tt class="py-string">'type'</tt><tt class="py-op">]</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L98"></a><tt class="py-lineno"> 98</tt>  <tt class="py-line">      <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-15" class="py-name"><a title="inca.Reporter.Reporter.xmlElement" class="py-name" href="#" onclick="return doclink('link-15', 'xmlElement', 'link-7');">xmlElement</a></tt><tt class="py-op">(</tt><tt class="py-string">'name'</tt><tt class="py-op">,</tt> <tt class="py-number">1</tt><tt class="py-op">,</tt> <tt class="py-name">entry</tt><tt class="py-op">[</tt><tt class="py-string">'name'</tt><tt class="py-op">]</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L99"></a><tt class="py-lineno"> 99</tt>  <tt class="py-line">      <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-16" class="py-name"><a title="inca.Reporter.Reporter.xmlElement" class="py-name" href="#" onclick="return doclink('link-16', 'xmlElement', 'link-7');">xmlElement</a></tt><tt class="py-op">(</tt><tt class="py-string">'statistics'</tt><tt class="py-op">,</tt> <tt class="py-number">0</tt><tt class="py-op">,</tt> <tt class="py-op">*</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-17" class="py-name" targets="Method inca.UsageReporter.UsageReporter._reportStatistics()=inca.UsageReporter.UsageReporter-class.html#_reportStatistics"><a title="inca.UsageReporter.UsageReporter._reportStatistics" class="py-name" href="#" onclick="return doclink('link-17', '_reportStatistics', 'link-17');">_reportStatistics</a></tt><tt class="py-op">(</tt><tt class="py-name">entry</tt><tt class="py-op">[</tt><tt class="py-string">'stats'</tt><tt class="py-op">]</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L100"></a><tt class="py-lineno">100</tt>  <tt class="py-line">    <tt class="py-op">]</tt> </tt>
+</div></div><a name="L101"></a><tt class="py-lineno">101</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="inca-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Thu Jul 10 13:04:57 2008
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

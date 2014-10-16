@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="12207"
+   name=""
+   committed-date="2009-07-15T02:26:59.814666Z"
+   url="http://cuzco.sdsc.edu:9080/misc/inca/subversion/inca/trunk/pubs/docs/src/figures/incat"
+   last-author="kericson"
+   kind="dir"
+   uuid="7dba3f4a-8be6-0310-8b3b-b4fec25ea7f3"
+   revision="12403"/>
+<entry
+   committed-rev="10446"
+   name="incat-annotated-suite.jpg"
+   text-time="2009-07-15T02:43:02.000000Z"
+   committed-date="2008-06-10T21:51:05.337500Z"
+   checksum="4c9303c8e6953c9974302aa91ce1250b"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:42:59.000000Z"/>
+<entry
+   committed-rev="9134"
+   name="incat-annotated-series.jpg"
+   text-time="2009-07-15T02:43:02.000000Z"
+   committed-date="2008-01-24T21:02:58.495422Z"
+   checksum="89cb666af79a55eabde49dcbdf1dfac5"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:43:00.000000Z"/>
+<entry
+   committed-rev="12207"
+   name="incat-annotated-summary-reporter.jpg"
+   text-time="2009-07-15T02:43:02.000000Z"
+   committed-date="2009-07-15T02:26:59.814666Z"
+   checksum="85365ec4a4b23e6bad136005d47c8be9"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:43:00.000000Z"/>
+<entry
+   committed-rev="9010"
+   name="incat-annotated-macro-dialog.png"
+   text-time="2009-07-15T02:43:02.000000Z"
+   committed-date="2008-01-15T21:54:17.069379Z"
+   checksum="07fdf08299a70b8fca797f9c6214e7ce"
+   last-author="ssmallen"
+   kind="file"
+   prop-time="2009-07-15T02:43:00.000000Z"/>
+<entry
+   committed-rev="10925"
+   name="all2all-suite.jpg"
+   text-time="2009-07-15T02:43:02.000000Z"
+   committed-date="2008-08-22T00:43:37.759637Z"
+   checksum="858acaa43600ce0ebe12ece9e049fa57"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:43:00.000000Z"/>
+<entry
+   committed-rev="11613"
+   name="manual.jpg"
+   text-time="2009-07-15T02:43:02.000000Z"
+   committed-date="2009-01-21T22:37:30.655614Z"
+   checksum="7266f9894a58ea69d18b648934f89c1c"
+   last-author="ssmallen"
+   kind="file"
+   prop-time="2009-07-15T02:43:00.000000Z"/>
+<entry
+   committed-rev="8593"
+   name="incat-annotated-resource-proxy.jpg"
+   text-time="2009-07-15T02:43:02.000000Z"
+   committed-date="2007-10-30T22:39:12.917198Z"
+   checksum="eb764820957dc68f2ab522acb2e05958"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:43:00.000000Z"/>
+<entry
+   committed-rev="6093"
+   name="starting-up.jpg"
+   text-time="2009-07-15T02:43:02.000000Z"
+   committed-date="2007-01-27T00:01:37.065200Z"
+   checksum="6b7a6ba7e6cf5cc6e1a17d84733a8268"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:43:00.000000Z"/>
+<entry
+   committed-rev="7621"
+   name="macro1.jpg"
+   text-time="2009-07-15T02:43:02.000000Z"
+   committed-date="2007-07-27T20:20:36.188507Z"
+   checksum="c8347552052aa86e40879e7c52249eef"
+   last-author="jhayes"
+   kind="file"
+   prop-time="2009-07-15T02:43:00.000000Z"/>
+<entry
+   committed-rev="7621"
+   name="macro2.jpg"
+   text-time="2009-07-15T02:43:02.000000Z"
+   committed-date="2007-07-27T20:20:36.188507Z"
+   checksum="16b499810520d61036868e6a7ac744d7"
+   last-author="jhayes"
+   kind="file"
+   prop-time="2009-07-15T02:43:00.000000Z"/>
+<entry
+   committed-rev="6093"
+   name="repository-tab.jpg"
+   text-time="2009-07-15T02:43:02.000000Z"
+   committed-date="2007-01-27T00:01:37.065200Z"
+   checksum="a5c2e202e599fb3298f957fdfeb654b9"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:43:00.000000Z"/>
+<entry
+   committed-rev="9131"
+   name="macro3.jpg"
+   text-time="2009-07-15T02:43:02.000000Z"
+   committed-date="2008-01-24T19:21:30.887099Z"
+   checksum="b9b5037a1169371a25275200ff5ce4ad"
+   last-author="jhayes"
+   kind="file"
+   prop-time="2009-07-15T02:43:00.000000Z"/>
+<entry
+   committed-rev="11366"
+   name="incat-annotated-resource-add.jpg"
+   text-time="2009-07-15T02:43:02.000000Z"
+   committed-date="2008-12-11T20:50:22.570995Z"
+   checksum="3168736e76ec6bafe8cbdee900e9ef4d"
+   last-author="jhayes"
+   kind="file"
+   prop-time="2009-07-15T02:43:00.000000Z"/>
+<entry
+   committed-rev="9134"
+   name="incat-annotated-gcc-version.jpg"
+   text-time="2009-07-15T02:43:03.000000Z"
+   committed-date="2008-01-24T21:02:58.495422Z"
+   checksum="07360242636178f9f4abeaa9a54142bd"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:43:01.000000Z"/>
+<entry
+   committed-rev="10446"
+   name="incat-annotated-repository.jpg"
+   text-time="2009-07-15T02:43:03.000000Z"
+   committed-date="2008-06-10T21:51:05.337500Z"
+   checksum="a0d9887c15218f13b534d6fb507c137b"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:43:01.000000Z"/>
+<entry
+   committed-rev="7671"
+   name="commit.jpg"
+   text-time="2009-07-15T02:43:03.000000Z"
+   committed-date="2007-07-30T20:01:01.851310Z"
+   checksum="4f8754360e3a2f8600e2f9ab8291b7ff"
+   last-author="jhayes"
+   kind="file"
+   prop-time="2009-07-15T02:43:01.000000Z"/>
+<entry
+   committed-rev="11611"
+   name="approval.png"
+   text-time="2009-07-15T02:43:03.000000Z"
+   committed-date="2009-01-21T22:24:40.930231Z"
+   checksum="9c5bd28e6fd436121e30abfdc5950748"
+   last-author="ssmallen"
+   kind="file"
+   prop-time="2009-07-15T02:43:01.000000Z"/>
+<entry
+   committed-rev="12202"
+   name="incat-annotated-all2all.jpg"
+   text-time="2009-07-15T02:43:03.000000Z"
+   committed-date="2009-07-14T23:09:02.749792Z"
+   checksum="4db18f7a25a77484073bc7cb66fce18e"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:43:01.000000Z"/>
+<entry
+   committed-rev="12091"
+   name="ug-incat-batch.png"
+   text-time="2009-07-15T02:43:03.000000Z"
+   committed-date="2009-06-15T23:18:32.480329Z"
+   checksum="428784e524da9a58bb276ffb6baa0cd8"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:43:01.000000Z"/>
+<entry
+   committed-rev="7671"
+   name="save.jpg"
+   text-time="2009-07-15T02:43:03.000000Z"
+   committed-date="2007-07-30T20:01:01.851310Z"
+   checksum="54d2e0082774f740b9ede3f5f7219140"
+   last-author="jhayes"
+   kind="file"
+   prop-time="2009-07-15T02:43:01.000000Z"/>
+<entry
+   committed-rev="8593"
+   name="incat-annotated-resource.jpg"
+   text-time="2009-07-15T02:43:03.000000Z"
+   committed-date="2007-10-30T22:39:12.917198Z"
+   checksum="e4f658e221325f00ca085cfadd91948a"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:43:02.000000Z"/>
+<entry
+   committed-rev="9134"
+   name="incat-annotated-subpackage-version.jpg"
+   text-time="2009-07-15T02:43:03.000000Z"
+   committed-date="2008-01-24T21:02:58.495422Z"
+   checksum="3c317c0e11f0ec6a2d18aaf042089742"
+   last-author="kericson"
+   kind="file"
+   prop-time="2009-07-15T02:43:02.000000Z"/>
+</wc-entries>
