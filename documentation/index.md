@@ -48,7 +48,7 @@ title: Documentation
 		<tr valign="top">
 			<td>2006 Inca Workshop</td>
 			<td><ul>
-					<li><a href="/workshops/2006-02">Slides and Video</a></li>
+					<li><a href="/workshops/2006-02">Slides</a></li>
 				</ul></td>
 			<td>2-23-06<br />
 				2-24-06 </td>
