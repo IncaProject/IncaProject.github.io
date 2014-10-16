@@ -1,0 +1,243 @@
+===============================================================================
+1. Download the 2.3 distribution into a new directory ($INCA_2.3)
+
+     % wget http://inca.sdsc.edu/releases/2.3/incaInstall.sh
+     % sh incaInstall.sh $INCA_2.3 core
+
+2. New stylesheets will effect the appearance of your status pages.
+   To verify changes in your stylesheets before deploying the
+   new jar files, start up a consumer on an alternate port within the
+   $INCA_2.3 directory:
+
+     % cd $INCA_2.3
+     % cp $INCA_2.2/etc/*.pem  $INCA_2.3/etc
+     % cp $INCA_2.2/etc/trusted/*.pem  $INCA_2.3/etc/trusted
+     % cp $INCA_2.2/etc/common/inca.properties  $INCA_2.3/etc/common
+  
+   Edit etc/jetty.xml and change 8080 on line 54 to an unused port (i.e., 8085)
+  
+     % ./bin/inca start consumer
+  
+   Test your XSL stylesheets and when satisfied, continue to step 3.
+
+3. Copy the jars from the $INCA_2.3 dir to your 2.2 installation.
+
+     % cd $INCA_2.2
+     % cp $INCA_2.3/lib/*.jar lib
+
+4. Copy the new consumer files to your installation
+
+   a.  Copy the new war files to your 2.2 installation.
+       % cp $INCA_2.3/webapps/war/* webapps/war
+
+   b. If you have made changes to the xsl stylesheets, merge the changes into
+       webapps/xsl.  
+       % mv $INCA_2.3/webapps/*xsl webapps/xsl
+
+5. Widen the incareport:incaexit_message column in any existing Inca DB.
+   In response to user requests, Inca 2.3 allows 4000 characters in reporter
+   exit messages, instead of the 255 allowed by version 2.2.  To use Inca 2.3
+   with an Inca database created by an earlier version, you'll need to use your
+   DB interface tool to modify the column.  If you're using postgres, widening
+   the column looks like this:
+
+     % psql incadb
+     incadb=> ALTER TABLE incareport
+     incadb->   ALTER incaexit_message TYPE character varying(4000);
+     incadb=> \q
+
+   If you have an older version of postgres (e.g., 7.4), widen the column
+   like this:
+
+     % psql incadb
+     incadb=> ALTER TABLE incareport ADD COLUMN tmp varchar(4000);
+     incadb=> UPDATE incareport SET tmp = incaexit_message;
+     incadb=> ALTER TABLE incareport DROP COLUMN incaexit_message;
+     incadb=> ALTER TABLE incareport rename tmp to incaexit_message;
+
+   mysql and oracle use a slightly different syntax:
+
+     % mysql incadb
+     mysql> ALTER TABLE incareport MODIFY incaexit_message VARCHAR(4000);
+     mysql> ^C
+
+6. Update bin/inca script
+
+       % cp $INCA_2.3/bin/inca bin
+
+7. Add the new notifier scripts and customize if needed.  
+
+       % cp $INCA_2.3/sbin/*Notifier sbin
+
+   Remove inca.depot.notification property from etc/common/inca.properties.
+
+8. Update repository scripts
+
+       % cp $INCA_2.3/Inca-Reporter-*/sbin/incpack Inca-Reporter-*/sbin
+       % cp $INCA_2.3/Inca-Reporter-*/cgi-bin/list_reporters.cgi Inca-Reporter-*/cgi-bin
+
+9. Upgrade remote reporter managers
+
+   % ./bin/inca stop agent
+   % ./bin/inca agent -u <resource group> -U "install Schedule-Cron-0.97" -logfile var/upgrade.log
+  
+   <resource group> is the group name that contains all of the resources you
+   want to update (e.g., defaultGrid).  You can alternatively update
+   individual reporter managers (e.g., localResource).  Watch progress in
+   var/upgrade.log and wait until you see the string 'Upgrade complete:'.  If
+   you see any errors in the log and are unable to determine the cause, email
+   inca@sdsc.edu for help.
+
+10. Restart Inca
+
+     % ./bin/inca restart all
+
+11. If you have a separate incat installation, follow steps 1, 3, and 6 to
+    upgrade it.  Then run
+
+       % cp $INCA_2.2/etc/agentkey.pem $INCA_2.2/etc/incatkey.pem 
+       % cp $INCA_2.2/etc/agentcert.pem $INCA_2.2/etc/incatcert.pem 
+    
+    Copy the "incat" section (lines 164-203) from 
+    $INCA_2.3/etc/common/inca.properties to $INCA_2.2/etc/common/inca.properties.
+    
+===============================================================================
+Upgrade Inca to 2.2 from a 2.1 installation:
+===============================================================================
+1. Download the 2.2 distribution into a new directory ($INCA_2.2)
+
+     % wget http://inca.sdsc.edu/releases/2.2/incaInstall.sh
+     % sh incaInstall.sh $INCA_2.2 core
+
+2. (optional) A new header stylesheet may effect the appearance of your
+   stylesheets.  To verify changes in your stylesheets before deploying the
+   new jar files, start up a consumer on an alternate port within the
+   $INCA_2.2 directory:
+
+     % cd $INCA_2.2
+     % cp $INCA_2.1/etc/*.pem  $INCA_2.2/etc
+     % cp $INCA_2.1/etc/trusted/*.pem  $INCA_2.2/etc/trusted
+     % cp $INCA_2.1/etc/common/inca.properties  $INCA_2.2/etc/common
+  
+   Edit etc/jetty.xml and change 8080 on line 54 to an unused port (i.e., 8085)
+  
+     % ./bin/inca start consumer
+  
+   Test your XSL stylesheets and when satisfied, continue to step 3.
+
+3. Copy the jars from the $INCA_2.2 dir to your 2.1 installation.
+
+     % cd $INCA_2.1
+     % cp $INCA_2.2/lib/*.jar lib
+
+4. Copy the new bin/inca script
+     % cp -r $INCA_2.2/bin/inca bin
+
+5. Copy the new consumer config files to your installation
+
+   a.  Move the *.war files to new location webapps/war
+       % rm -f webapps/*.war
+       % cp -r $INCA_2.2/webapps/war webapps
+
+   b.  If you have made changes to your jetty.xml file, change line 157 from
+
+         <Arg>webapps</Arg>
+
+       to
+
+         <Arg>webapps/war</Arg>
+
+       Otherwise, you can copy over the new one.
+       % cp $INCA_2.2/etc/jetty.xml etc
+
+   c.  Move the consumer XML files over to webapps/xml
+       % cp -r $INCA_2.2/webapps/xml webapps
+
+       Also, include any from etc.  For example, 
+       % mv $INCA_2.2/etc/swStack.xml webpps/xml
+
+   d. If you have made changes to the xsl stylesheets, merge the changes into
+       webapps/xsl (and remove from etc).  
+       % mv $INCA_2.2/webapps/*xsl webapps/xsl
+     
+       If you use the default stylesheets (and have not made any
+       customization), remove the *.xsl from etc
+       % rm -f $INCA_2.2/webapps/*xsl 
+
+6. If you have modified your etc/common/log4j.properties file, change line 56
+   from
+
+   log4j.appender.stdout.layout.ConversionPattern=%d{ABSOLUTE} %5p %c{1}:%L - %m%n
+
+   to
+
+   log4j.appender.stdout.layout.ConversionPattern=%d{ABSOLUTE} %5p [%t] %c{1}:%L - %m%n
+
+7. Upgrade remote reporter managers
+
+   % ./bin/inca agent -u <resource group> -logfile var/upgrade.log
+  
+   <resource group> is the group name that contains all of the resources you
+   want to update (e.g., defaultGrid).  You can alternatively update
+   individual reporter managers (e.g., localResource).  Watch progress in
+   var/upgrade.log and wait until you see the string 'Upgrade complete:'.  If
+   you see any errors in the log and are unable to determine the cause, email
+   inca@sdsc.edu for help.
+
+8. Restart Inca
+
+     % ./bin/inca stop all
+     % ./bin/inca start all
+
+===============================================================================
+Upgrade Inca to 2.1 from a 2.03 installation:
+===============================================================================
+
+1. Download the 2.1 distribution into a new directory ($INCA_2.1)
+
+     % wget http://inca.sdsc.edu/releases/2.1/incaInstall.sh
+     % sh incaInstall.sh $INCA_2.1 core
+
+2. (optional) Many stylesheets for the consumer have been improved to be more
+   readable and are also required as the underlying XML has changed slightly
+   (the <suites> tag is now enclosed in a <suiteResults> tag).  To verify
+   changes in your stylesheets before deploying the new jar files, start up a
+   consumer on an alternate port within the $INCA_2.1 directory:
+
+     % cd $INCA_2.1
+     % cp $INCA_2.03/etc/*.pem  $INCA_2.1/etc
+     % cp $INCA_2.03/etc/trusted/*.pem  $INCA_2.1/etc/trusted
+     % cp $INCA_2.03/etc/common/inca.properties  $INCA_2.1/etc/common
+  
+   Edit etc/jetty.xml and change 8080 on line 54 to an unused port (i.e., 8085)
+  
+     % ./bin/inca start consumer
+  
+   Test your XSL stylesheets and when satisfied, continue to step 3.
+
+3. Copy the jars from the $INCA_2.1 dir to your 2.03 installation.
+
+     % cd $INCA_2.03
+     % cp $INCA_2.1/lib/*.jar lib
+
+4. Copy the new consumer config files to your installation
+
+     % cp -r $INCA_2.1/webapps .
+     % cp $INCA_2.1/etc/jetty.xml etc
+     % cp $INCA_2.1/etc/realm.properties etc
+     % cp $INCA_2.1/etc/webdefault.xml etc
+
+5. Copy consumer stylesheets to the etc directory (you may wish to backup 
+   any custom 2.03 XSL before this step)
+
+     % cp $INCA_2.1/etc/*.xsl etc
+
+6. If you use the manual reporter manager option, copy the customizable
+   email template.
+
+     % cp $INCA_2.1/etc/manualEmail.txt etc
+
+7. Restart Inca
+
+     % ./bin/inca stop all
+     % ./bin/inca start all

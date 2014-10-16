@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="8263"
+   name=""
+   committed-date="2007-10-05T00:54:04.545097Z"
+   url="http://cuzco.sdsc.edu:9080/misc/inca/subversion/inca/trunk/pubs/docs/publish/html/schemas"
+   last-author="kericson"
+   kind="dir"
+   uuid="7dba3f4a-8be6-0310-8b3b-b4fec25ea7f3"
+   revision="9473"/>
+<entry
+   committed-rev="2315"
+   name="suiteExpanded.xsd"
+   text-time="2006-11-01T02:46:25.000000Z"
+   committed-date="2006-02-16T23:01:37.768377Z"
+   checksum="52d144b208e74b08000a10b381620d00"
+   last-author="kericson"
+   kind="file"
+   prop-time="2006-11-01T02:46:24.000000Z"/>
+<entry
+   committed-rev="2128"
+   name="reporter.xsd"
+   text-time="2006-11-01T02:46:25.000000Z"
+   committed-date="2006-02-02T23:23:05.257801Z"
+   checksum="314ab0eaf9264002cdc09dcc73c39d10"
+   last-author="kericson"
+   kind="file"
+   prop-time="2006-11-01T02:46:24.000000Z"/>
+<entry
+   committed-rev="8263"
+   name="incaCommon.xsd"
+   text-time="2007-10-05T00:54:16.000000Z"
+   committed-date="2007-10-05T00:54:04.545097Z"
+   checksum="949d2c65523b6021d386b29316d9dff6"
+   last-author="kericson"
+   kind="file"
+   prop-time="2007-10-05T00:54:16.000000Z"/>
+<entry
+   committed-rev="2128"
+   name="subscription.xsd"
+   text-time="2006-11-01T02:46:25.000000Z"
+   committed-date="2006-02-02T23:23:05.257801Z"
+   checksum="90639b59133706d741fbebfc9c04e7da"
+   last-author="kericson"
+   kind="file"
+   prop-time="2006-11-01T02:46:24.000000Z"/>
+<entry
+   committed-rev="2128"
+   name="version_reporter.xsd"
+   text-time="2006-11-01T02:46:25.000000Z"
+   committed-date="2006-02-02T23:23:05.257801Z"
+   checksum="4d5d7a15a9615f584bae3d3856b4ec5a"
+   last-author="kericson"
+   kind="file"
+   prop-time="2006-11-01T02:46:24.000000Z"/>
+<entry
+   committed-rev="5397"
+   name="suite.xsd"
+   text-time="2006-11-06T23:54:26.000000Z"
+   committed-date="2006-11-06T20:23:27.686536Z"
+   checksum="a28c0fe6eefd9ce83467edee4195c15a"
+   last-author="jhayes"
+   kind="file"
+   prop-time="2006-11-06T23:54:26.000000Z"/>
+<entry
+   committed-rev="5397"
+   name="catalog.xsd"
+   text-time="2006-11-06T23:54:26.000000Z"
+   committed-date="2006-11-06T20:23:27.686536Z"
+   checksum="f2e9cd81658f0a1f79b63f65b2a958f0"
+   last-author="jhayes"
+   kind="file"
+   prop-time="2006-11-06T23:54:26.000000Z"/>
+<entry
+   committed-rev="5397"
+   name="inca.xsd"
+   text-time="2006-11-06T23:54:26.000000Z"
+   committed-date="2006-11-06T20:23:27.686536Z"
+   checksum="55dd062b5811cd01d773c64ff1744467"
+   last-author="jhayes"
+   kind="file"
+   prop-time="2006-11-06T23:54:26.000000Z"/>
+<entry
+   committed-rev="5397"
+   name="resourceConfig.xsd"
+   text-time="2006-11-06T23:54:26.000000Z"
+   committed-date="2006-11-06T20:23:27.686536Z"
+   checksum="58d8b867a4bbd9d2bd09455cf0605a0a"
+   last-author="jhayes"
+   kind="file"
+   prop-time="2006-11-06T23:54:26.000000Z"/>
+<entry
+   committed-rev="2128"
+   name="reporter_agent.xsd"
+   text-time="2006-11-01T02:46:25.000000Z"
+   committed-date="2006-02-02T23:23:05.257801Z"
+   checksum="6c9bda878754f9182bfda9fdf18479ce"
+   last-author="kericson"
+   kind="file"
+   prop-time="2006-11-01T02:46:25.000000Z"/>
+</wc-entries>
