@@ -1,0 +1,6 @@
+K 13
+svn:externals
+V 94
+figures http://capac.sdsc.edu:9080/localdisk/inca/subversion/inca/trunk/pubs/docs/src/figures
+
+END

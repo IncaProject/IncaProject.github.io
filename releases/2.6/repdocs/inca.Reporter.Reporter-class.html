@@ -1,0 +1,1355 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>inca.Reporter.Reporter</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="inca-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="inca-module.html">Package&nbsp;inca</a> ::
+        <a href="inca.Reporter-module.html">Module&nbsp;Reporter</a> ::
+        Class&nbsp;Reporter
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="inca.Reporter.Reporter-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class Reporter</h1><p class="nomargin-top"><span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter">source&nbsp;code</a></span></p>
+<dl><dt>Known Subclasses:</dt>
+<dd>
+      <ul class="subclass-list">
+<li><a href="inca.VersionReporter.VersionReporter-class.html">VersionReporter.VersionReporter</a></li><li>, <a href="inca.UsageReporter.UsageReporter-class.html">UsageReporter.UsageReporter</a></li><li>, <a href="inca.SimpleUnitReporter.SimpleUnitReporter-class.html">SimpleUnitReporter.SimpleUnitReporter</a></li><li>, <a href="inca.PerformanceReporter.PerformanceReporter-class.html">PerformanceReporter.PerformanceReporter</a></li>  </ul>
+</dd></dl>
+
+<hr />
+<p>Reporter - Module for creating Inca reporters:</p>
+<pre class="literalblock">
+ from inca.Reporter import Reporter
+ reporter = Reporter(
+   name = 'hack.version',
+   version = 0.1,
+   description = 'A really helpful reporter description',
+   url = 'http://url.to.more.reporter.info'
+ )
+</pre>
+  <p>This module creates Inca reporters--objects that produce XML that 
+  follows the Inca Report schema.  The constructor may be called with a 
+  number of reporter attributes that can later be set and queried with 
+  their corresponding get/set functions (described below).  For 
+  example:</p>
+<pre class="literalblock">
+ reporter = Reporter()
+ reporter.setUrl('http://url.to.more.reporter.info')
+ reporter.setVersion(0.1)
+</pre>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="__del__"></a><span class="summary-sig-name">__del__</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Class destructor.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.__del__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="inca.Reporter.Reporter-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">**attributes</span>)</span><br />
+      Class constructor that returns a new Reporter object.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.__init__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="_helpXml"></a><span class="summary-sig-name">_helpXml</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Returns help information formatted as the body of an Inca report.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter._helpXml">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="_iso8601Time"></a><span class="summary-sig-name">_iso8601Time</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">when</span>)</span><br />
+      Returns the UTC time for the time() return value when in ISO 8601 
+      format: CCMM-MM-DDTHH:MM:SSZ</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter._iso8601Time">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="_reportXml"></a><span class="summary-sig-name">_reportXml</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">*contents</span>)</span><br />
+      Returns XML report beginning with the header and input sections plus 
+      any contents specified in the arguments.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter._reportXml">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="_timeoutException"></a><span class="summary-sig-name">_timeoutException</span>(<span class="summary-sig-arg">*args</span>)</span><br />
+      SIGALRM handler that throws an exception.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter._timeoutException">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="inca.Reporter.Reporter-class.html#addArg" class="summary-sig-name">addArg</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">name</span>,
+        <span class="summary-sig-arg">description</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">default</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">pattern</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Adds a command line argument (invocation syntax -name=value) to the 
+      reporter.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.addArg">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="inca.Reporter.Reporter-class.html#addDependency" class="summary-sig-name">addDependency</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">*dependencies</span>)</span><br />
+      Add one or more dependencies to the list of modules on which this 
+      reporter depends.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.addDependency">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="inca.Reporter.Reporter-class.html#argValue" class="summary-sig-name">argValue</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">name</span>,
+        <span class="summary-sig-arg">position</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Called after the processArgv method, this returns the value of the 
+      position'th instance (starting with 1) of the name command-line 
+      argument.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.argValue">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="inca.Reporter.Reporter-class.html#argValues" class="summary-sig-name">argValues</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">name</span>)</span><br />
+      Called after the processArgv method, this returns an array of all 
+      values specified for the name command-line argument.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.argValues">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="inca.Reporter.Reporter-class.html#compiledProgramOutput" class="summary-sig-name">compiledProgramOutput</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">**params</span>)</span><br />
+      A convenience; compiles and runs a program, removes the source and 
+      exec files, and returns the program's combined stderr/out output.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.compiledProgramOutput">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="inca.Reporter.Reporter-class.html#compiledProgramStatusOutput" class="summary-sig-name">compiledProgramStatusOutput</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">**params</span>)</span><br />
+      A convenience; compiles and runs a program, removes the source and 
+      exec files,  and returns a tuple that contains the program's exit 
+      code and its combined stderr/out output.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.compiledProgramStatusOutput">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="failPrintAndExit"></a><span class="summary-sig-name">failPrintAndExit</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">msg</span>)</span><br />
+      A convenience; calls setResult(0, msg) and printReport() before 
+      exiting the reporter.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.failPrintAndExit">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getBody"></a><span class="summary-sig-name">getBody</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Returns the body of the report.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.getBody">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getCompleted"></a><span class="summary-sig-name">getCompleted</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Returns the completion indicator of the reporter.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.getCompleted">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getCwd"></a><span class="summary-sig-name">getCwd</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Returns the initial working directory of the reporter.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.getCwd">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getDescription"></a><span class="summary-sig-name">getDescription</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Returns the initial working directory of the reporter.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.getDescription">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getFailMessage"></a><span class="summary-sig-name">getFailMessage</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Returns the failure message of the reporter.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.getFailMessage">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getName"></a><span class="summary-sig-name">getName</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Returns the name that identifies this reporter.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.getName">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getUrl"></a><span class="summary-sig-name">getUrl</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Returns the url which describes the reporter in more detail.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.getUrl">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getVersion"></a><span class="summary-sig-name">getVersion</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Returns the version of the reporter.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.getVersion">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="inca.Reporter.Reporter-class.html#log" class="summary-sig-name">log</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">type</span>,
+        <span class="summary-sig-arg">*msgs</span>)</span><br />
+      Appends each element of msgs to the list of type log messages stored 
+      in the reporter.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.log">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="inca.Reporter.Reporter-class.html#loggedCommandOutput" class="summary-sig-name">loggedCommandOutput</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">cmd</span>,
+        <span class="summary-sig-arg">timeout</span>=<span class="summary-sig-default">None</span>)</span><br />
+      A convenience; appends cmd to the 'system'-type log messages stored 
+      in the reporter, then runs cmd and returns its combined 
+      stderr/stdout.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.loggedCommandOutput">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="inca.Reporter.Reporter-class.html#loggedCommandStatusOutput" class="summary-sig-name">loggedCommandStatusOutput</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">cmd</span>,
+        <span class="summary-sig-arg">timeout</span>=<span class="summary-sig-default">None</span>)</span><br />
+      A convenience; appends cmd to the 'system'-type log messages stored 
+      in the reporter, then runs cmd and returns a tuple that contains its 
+      exit code and combined stderr/stdout.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.loggedCommandStatusOutput">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="printReport"></a><span class="summary-sig-name">printReport</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">verbose</span>=<span class="summary-sig-default">None</span>)</span><br />
+      A convenience; prints report(verbose) to stdout.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.printReport">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="inca.Reporter.Reporter-class.html#processArgv" class="summary-sig-name">processArgv</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">argv</span>)</span><br />
+      Processes argv which is a list of command-line arguments of the form 
+      -name=value</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.processArgv">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="inca.Reporter.Reporter-class.html#report" class="summary-sig-name">report</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">verbose</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Returns report text or XML, depending on the value (0, 1, 2) of 
+      verbose.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.report">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="inca.Reporter.Reporter-class.html#reportBody" class="summary-sig-name">reportBody</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Constructs and returns the XML contents of the report body.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.reportBody">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="setBody"></a><span class="summary-sig-name">setBody</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">body</span>)</span><br />
+      Sets the body of the report to body.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.setBody">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="setCompleted"></a><span class="summary-sig-name">setCompleted</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">completed</span>)</span><br />
+      Sets the completion indicator of the reporter to completed.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.setCompleted">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="setCwd"></a><span class="summary-sig-name">setCwd</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">cwd</span>)</span><br />
+      Sets the initial working directory of the reporter to cwd.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.setCwd">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="setDescription"></a><span class="summary-sig-name">setDescription</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">description</span>)</span><br />
+      Sets the description of the reporter to description.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.setDescription">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="setFailMessage"></a><span class="summary-sig-name">setFailMessage</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">msg</span>)</span><br />
+      Sets the failure message of the reporter to msg.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.setFailMessage">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="setName"></a><span class="summary-sig-name">setName</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">name</span>)</span><br />
+      Sets the name that identifies this reporter to name.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.setName">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="setResult"></a><span class="summary-sig-name">setResult</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">completed</span>,
+        <span class="summary-sig-arg">msg</span>=<span class="summary-sig-default">None</span>)</span><br />
+      A convenience; calls setCompleted(completed) and setFailMessage(msg).</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.setResult">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="setUrl"></a><span class="summary-sig-name">setUrl</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">url</span>)</span><br />
+      Sets the url for the reporter to url.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.setUrl">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="inca.Reporter.Reporter-class.html#setVersion" class="summary-sig-name">setVersion</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">version</span>)</span><br />
+      Sets the version of the reporter to version.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.setVersion">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="inca.Reporter.Reporter-class.html#tempFile" class="summary-sig-name">tempFile</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">*paths</span>)</span><br />
+      A convenience.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.tempFile">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="inca.Reporter.Reporter-class.html#xmlElement" class="summary-sig-name">xmlElement</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">name</span>,
+        <span class="summary-sig-arg">escape</span>,
+        <span class="summary-sig-arg">*contents</span>)</span><br />
+      Returns the XML element name surrounding contents.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.xmlElement">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Method Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-MethodDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="__init__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">**attributes</span>)</span>
+    <br /><em class="fname">(Constructor)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.__init__">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Class constructor that returns a new Reporter object.</p>
+  <p>The constructor may be called with any of the following named 
+  attributes as parameters:</p>
+<pre class="literalblock">
+ body
+   the XML body of the report.  See the Inca Report schema for format.
+
+ completed
+   boolean indicating whether or not the reporter has completed
+   generating the information it is intended to produce
+
+ description
+   a verbose description of the reporter
+
+ fail_message
+   a message describing why the reporter failed to complete its task
+
+ name
+   the name that identifies this reporter
+
+ url
+   URL to get more information about the reporter
+
+ version
+   the version of the reporter; defaults to '0'
+</pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="addArg"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">addArg</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">name</span>,
+        <span class="sig-arg">description</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">default</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">pattern</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.addArg">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Adds a command line argument (invocation syntax -name=value) to the 
+  reporter.  If supplied, the optional description will be included in the 
+  reporter help XML and display.  If supplied, default indicates that the 
+  argument is optional; the argValue method will return default if the 
+  command line does not include a value for the argument.  The optional 
+  pattern specifies a pattern for recognizing valid argument values; the 
+  default is '.*', which means that any text is acceptable for the argument
+  value.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="addDependency"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">addDependency</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">*dependencies</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.addDependency">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Add one or more dependencies to the list of modules on which this 
+  reporter depends.  Dependencies are reported as part of reporter help 
+  output to assist reporter repository tools in their retrievals.  NOTE: 
+  dependencies on the standard Inca reporter library modules are added by 
+  the modules themselves, so a reporter only needs to invoke this method to
+  report external dependencies.  The Inca Reporter Instance Manager 
+  presently only supports dependencies on Inca repository packages.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="argValue"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">argValue</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">name</span>,
+        <span class="sig-arg">position</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.argValue">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Called after the processArgv method, this returns the value of the 
+  position'th instance (starting with 1) of the name command-line argument.
+  Returns the value of the last instance if position is None. Returns None 
+  if name is not a recognized argument.  Returns the default value for name
+  if it has one and name is included fewer than position times on the 
+  command line.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="argValues"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">argValues</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">name</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.argValues">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Called after the processArgv method, this returns an array of all 
+  values specified for the name command-line argument.  Returns None if 
+  name is not a recognized argument.  Returns a single-element array 
+  containing the default value for name if it has one and name does not 
+  appear on the command line.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="compiledProgramOutput"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">compiledProgramOutput</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">**params</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.compiledProgramOutput">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>A convenience; compiles and runs a program, removes the source and 
+  exec files, and returns the program's combined stderr/out output.  See 
+  compiledProgramStatusOutput for a list of recognized params.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="compiledProgramStatusOutput"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">compiledProgramStatusOutput</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">**params</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.compiledProgramStatusOutput">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>A convenience; compiles and runs a program, removes the source and 
+  exec files,  and returns a tuple that contains the program's exit code 
+  and its combined stderr/out output.  Recognized params:</p>
+<pre class="literalblock">
+ code
+   the code to compile; required
+
+ compiler
+   the compiler to invoke; defaults to cc
+
+ language
+   source file language--one of 'c', 'c++', 'fortran', or 'java';
+   defaults to 'c'.
+
+ out_switch
+   the switch to use to specify the compiler output file; default '-o '
+
+ switches
+   additional switches to pass to the compiler; defaults to ''
+
+ timeout
+   max seconds compilation/execution may take; returns a non-zero exit
+   status and any partial program output on time-out
+</pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="log"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">log</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">type</span>,
+        <span class="sig-arg">*msgs</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.log">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Appends each element of msgs to the list of type log messages stored 
+  in the reporter. type must be one of 'debug', 'error', 'info', 'system', 
+  or 'warn'.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="loggedCommandOutput"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">loggedCommandOutput</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">cmd</span>,
+        <span class="sig-arg">timeout</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.loggedCommandOutput">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>A convenience; appends cmd to the 'system'-type log messages stored in
+  the reporter, then runs cmd and returns its combined stderr/stdout. If 
+  timeout is specified and the command doesn't complete within timeout 
+  seconds, aborts the execution of cmd and returns any partial output.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="loggedCommandStatusOutput"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">loggedCommandStatusOutput</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">cmd</span>,
+        <span class="sig-arg">timeout</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.loggedCommandStatusOutput">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>A convenience; appends cmd to the 'system'-type log messages stored in
+  the reporter, then runs cmd and returns a tuple that contains its exit 
+  code and combined stderr/stdout.  If timeout is specified and the command
+  doesn't complete within timeout seconds, aborts the execution of cmd and 
+  returns a non-zero exit code and any partial output.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="processArgv"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">processArgv</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">argv</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.processArgv">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Processes argv which is a list of command-line arguments of the form 
+  -name=value</p>
+  <p>The following options are predefined:</p>
+<pre class="literalblock">
+ help
+   yes
+     Prints help information describing the reporter inputs, then
+     forces the reporter to exit.  If the verbose level is 0, the
+     output will be text; otherwise, it will be Inca Report XML.
+   no (default)
+     Normal reporter execution.
+
+ log
+   0 (default)
+     log no messages
+   1
+     log error messages
+   2
+     log error and warning messages
+   3
+     log error, warning, and system messages
+   4
+     log error, warning, system, and info messages
+   5
+     log error, warning, system, info, and debug messages
+   debug
+     log only debug messages
+   error
+     log only error messages
+   info
+     log only info messages
+   system
+     log only system messages
+   warn
+     log only warning messages
+
+ verbose
+   0
+     print will only produce &quot;completed&quot; or &quot;failed&quot;.
+   1 (default)
+     print will produce Inca Report XML.
+   2
+     print will produce Inca Report XML that includes help information.
+
+version
+  yes
+    Prints the reporter version number and exits.
+  no (default)
+    Normal reporter execution.
+</pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="report"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">report</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">verbose</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.report">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Returns report text or XML, depending on the value (0, 1, 2) of 
+  verbose. Uses the value of the -verbose switch if verbose is None.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="reportBody"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">reportBody</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.reportBody">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Constructs and returns the XML contents of the report body.  Child 
+  classes should override the default implementation, which returns 
+  None.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="setVersion"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">setVersion</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">version</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.setVersion">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Sets the version of the reporter to version.  Recognizes and parses 
+  CVS revision strings.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="tempFile"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">tempFile</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">*paths</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.tempFile">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>A convenience.  Adds each element of paths to a list of temporary 
+  files that will be deleted automatically when the reporter is 
+  destroyed.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="xmlElement"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">xmlElement</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">name</span>,
+        <span class="sig-arg">escape</span>,
+        <span class="sig-arg">*contents</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="inca.Reporter-pysrc.html#Reporter.xmlElement">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Returns the XML element name surrounding contents.  escape should be 
+  true only for leaf elements; in this case, each special XML character 
+  (&lt;&gt;&amp;) in contents is replaced by the equivalent XML entity.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="inca-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Tue Nov  2 11:25:58 2010
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>
