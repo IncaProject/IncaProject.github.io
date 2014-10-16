@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="2128"
+   name=""
+   committed-date="2006-02-02T23:23:05.257801Z"
+   url="http://cuzco.sdsc.edu:9080/misc/inca/subversion/inca/trunk/pubs/docs/publish/html/stylesheet-images"
+   last-author="kericson"
+   kind="dir"
+   uuid="7dba3f4a-8be6-0310-8b3b-b4fec25ea7f3"
+   revision="8726"/>
+<entry
+   committed-rev="2128"
+   name="tip.gif"
+   text-time="2006-11-01T02:46:30.000000Z"
+   committed-date="2006-02-02T23:23:05.257801Z"
+   checksum="8e374de10456203f89111320538d8eb7"
+   last-author="kericson"
+   kind="file"
+   prop-time="2006-11-01T02:46:30.000000Z"/>
+<entry
+   committed-rev="2128"
+   name="important.gif"
+   text-time="2006-11-01T02:46:30.000000Z"
+   committed-date="2006-02-02T23:23:05.257801Z"
+   checksum="d507782ec728e75559f219ad07437089"
+   last-author="kericson"
+   kind="file"
+   prop-time="2006-11-01T02:46:30.000000Z"/>
+<entry
+   committed-rev="2128"
+   name="caution.gif"
+   text-time="2006-11-01T02:46:30.000000Z"
+   committed-date="2006-02-02T23:23:05.257801Z"
+   checksum="796e8bef209feec20ac344378cfd2b00"
+   last-author="kericson"
+   kind="file"
+   prop-time="2006-11-01T02:46:30.000000Z"/>
+<entry
+   committed-rev="2128"
+   name="warning.gif"
+   text-time="2006-11-01T02:46:30.000000Z"
+   committed-date="2006-02-02T23:23:05.257801Z"
+   checksum="12c361a30fd6a7aff65c448580ef124b"
+   last-author="kericson"
+   kind="file"
+   prop-time="2006-11-01T02:46:30.000000Z"/>
+<entry
+   committed-rev="2128"
+   name="note.gif"
+   text-time="2006-11-01T02:46:30.000000Z"
+   committed-date="2006-02-02T23:23:05.257801Z"
+   checksum="aae75e9c19d42d251a7c4d64d6a179d1"
+   last-author="kericson"
+   kind="file"
+   prop-time="2006-11-01T02:46:30.000000Z"/>
+</wc-entries>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="8726"
+   name=""
+   committed-date="2007-11-26T18:18:11.477541Z"
+   url="http://cuzco.sdsc.edu:9080/misc/inca/subversion/inca/trunk/pubs/docs/publish/html"
+   last-author="kericson"
+   kind="dir"
+   uuid="7dba3f4a-8be6-0310-8b3b-b4fec25ea7f3"
+   prop-time="2006-11-01T06:21:32.000000Z"
+   revision="8726"/>
+<entry
+   committed-rev="8263"
+   name="userguide-requirements.html"
+   text-time="2007-10-05T00:54:17.000000Z"
+   committed-date="2007-10-05T00:54:04.545097Z"
+   checksum="799c83bd011459a6cb6f510903fd4008"
+   last-author="kericson"
+   kind="file"
+   prop-time="2007-10-05T00:54:15.000000Z"/>
+<entry
+   committed-rev="8649"
+   name="userguide-reporters.html"
+   text-time="2007-10-31T21:36:27.000000Z"
+   committed-date="2007-10-31T21:33:56.261309Z"
+   checksum="dde2449cf06ea20f83aebc1afcf87b9e"
+   last-author="kericson"
+   kind="file"
+   prop-time="2007-10-31T21:36:26.000000Z"/>
+<entry
+   committed-rev="7439"
+   name="userguide-logging.html"
+   text-time="2007-07-13T04:23:36.000000Z"
+   committed-date="2007-07-12T23:56:09.194689Z"
+   checksum="bbc547aaf34292b3040b080512e43991"
+   last-author="kericson"
+   kind="file"
+   prop-time="2007-07-13T04:23:36.000000Z"/>
+<entry
+   name="schemas"
+   kind="dir"/>
+<entry
+   committed-rev="8263"
+   name="userguide-recommendations.html"
+   text-time="2007-10-05T00:54:17.000000Z"
+   committed-date="2007-10-05T00:54:04.545097Z"
+   checksum="22a251a8376ad37d7fa267b9b6a1c626"
+   last-author="kericson"
+   kind="file"
+   prop-time="2007-10-05T00:54:16.000000Z"/>
+<entry
+   committed-rev="8649"
+   name="userguide-troubleshooting.html"
+   text-time="2007-10-31T21:36:27.000000Z"
+   committed-date="2007-10-31T21:33:56.261309Z"
+   checksum="2c27a4a1666d2b68278a696ded233764"
+   last-author="kericson"
+   kind="file"
+   prop-time="2007-10-31T21:36:26.000000Z"/>
+<entry
+   committed-rev="8649"
+   name="userguide-quickstart.html"
+   text-time="2007-10-31T21:36:27.000000Z"
+   committed-date="2007-10-31T21:33:56.261309Z"
+   checksum="bdb8b0f3159c1152f8b37f286e69595c"
+   last-author="kericson"
+   kind="file"
+   prop-time="2007-10-31T21:36:26.000000Z"/>
+<entry
+   committed-rev="8263"
+   name="userguide-intro.html"
+   text-time="2007-10-05T00:54:17.000000Z"
+   committed-date="2007-10-05T00:54:04.545097Z"
+   checksum="9e2c6fdef607f7f05f7759700a5037e1"
+   last-author="kericson"
+   kind="file"
+   prop-time="2007-10-05T00:54:16.000000Z"/>
+<entry
+   committed-rev="8726"
+   name="userguide-consumer.html"
+   text-time="2007-11-26T18:18:32.000000Z"
+   committed-date="2007-11-26T18:18:11.477541Z"
+   checksum="07a8b116d5a2aa344ce9d23885365a58"
+   last-author="kericson"
+   kind="file"
+   prop-time="2007-11-26T18:18:32.000000Z"/>
+<entry
+   committed-rev="8649"
+   name="userguide-apis.html"
+   text-time="2007-10-31T21:36:27.000000Z"
+   committed-date="2007-10-31T21:33:56.261309Z"
+   checksum="afa95b40c2e58bbe047782bdd41dd6a4"
+   last-author="kericson"
+   kind="file"
+   prop-time="2007-10-31T21:36:26.000000Z"/>
+<entry
+   committed-rev="6293"
+   name="2.0beta-guide.html"
+   text-time="2007-01-31T20:13:12.000000Z"
+   committed-date="2007-01-31T20:12:47.219684Z"
+   checksum="73233784873a6084cf7d8366501d5f48"
+   last-author="kericson"
+   kind="file"
+   prop-time="2007-01-31T20:13:12.000000Z"/>
+<entry
+   committed-rev="8649"
+   name="userguide-incat.html"
+   text-time="2007-10-31T21:36:27.000000Z"
+   committed-date="2007-10-31T21:33:56.261309Z"
+   checksum="df9b64dd4ea0eacf50e4f6301deb35fc"
+   last-author="kericson"
+   kind="file"
+   prop-time="2007-10-31T21:36:26.000000Z"/>
+<entry
+   name="stylesheet-images"
+   kind="dir"/>
+<entry
+   committed-rev="5600"
+   name="inca.css"
+   text-time="2006-11-06T23:54:26.000000Z"
+   committed-date="2006-12-20T23:45:07.026426Z"
+   checksum="1c2aa0b445994e23fac68cdffc2968bd"
+   last-author="kericson"
+   kind="file"
+   prop-time="2006-12-21T00:14:41.000000Z"/>
+<entry
+   committed-rev="8263"
+   name="userguide-security.html"
+   text-time="2007-10-05T00:54:18.000000Z"
+   committed-date="2007-10-05T00:54:04.545097Z"
+   checksum="35b33b472786acad5e2d91aadc70ab18"
+   last-author="kericson"
+   kind="file"
+   prop-time="2007-10-05T00:54:16.000000Z"/>
+<entry
+   committed-rev="8645"
+   name="userguide-index.html"
+   text-time="2007-10-31T21:05:19.000000Z"
+   committed-date="2007-10-31T20:48:26.538413Z"
+   checksum="3f34ab560f1d7f364a74577423501d04"
+   last-author="kericson"
+   kind="file"
+   prop-time="2007-10-31T21:05:19.000000Z"/>
+<entry
+   committed-rev="8649"
+   name="userguide-advanced-config.html"
+   text-time="2007-10-31T21:36:27.000000Z"
+   committed-date="2007-10-31T21:33:56.261309Z"
+   checksum="f18bfc21a2856436fdc190164bb36e1c"
+   last-author="kericson"
+   kind="file"
+   prop-time="2007-10-31T21:36:27.000000Z"/>
+<entry
+   committed-rev="8263"
+   name="userguide-man.html"
+   text-time="2007-10-05T00:54:18.000000Z"
+   committed-date="2007-10-05T00:54:04.545097Z"
+   checksum="33f8e6bc2baa317bbe46cd3ca25a9e11"
+   last-author="kericson"
+   kind="file"
+   prop-time="2007-10-05T00:54:17.000000Z"/>
+<entry
+   committed-rev="2415"
+   name="install.html"
+   text-time="2006-11-01T02:46:30.000000Z"
+   committed-date="2006-03-10T21:40:48.723215Z"
+   checksum="d1a723dca5ea4477378060f897c6dabd"
+   last-author="kericson"
+   kind="file"
+   prop-time="2006-11-01T02:46:30.000000Z"/>
+<entry
+   committed-rev="8726"
+   name="userguide-one.html"
+   text-time="2007-11-26T18:18:32.000000Z"
+   committed-date="2007-11-26T18:18:11.477541Z"
+   checksum="a657478a7320545a6e2c98243c508a42"
+   last-author="kericson"
+   kind="file"
+   prop-time="2007-11-26T18:18:32.000000Z"/>
+<entry
+   committed-rev="8649"
+   name="userguide-webservices.html"
+   text-time="2007-10-31T21:36:27.000000Z"
+   committed-date="2007-10-31T21:33:56.261309Z"
+   checksum="b36af4ed6818be7c68fd5f123f5d7912"
+   last-author="kericson"
+   kind="file"
+   prop-time="2007-10-31T21:36:27.000000Z"/>
+</wc-entries>
