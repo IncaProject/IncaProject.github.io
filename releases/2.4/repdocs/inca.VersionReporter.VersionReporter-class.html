@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>inca.VersionReporter.VersionReporter</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="inca-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="inca-module.html">Package&nbsp;inca</a> ::
+        <a href="inca.VersionReporter-module.html">Module&nbsp;VersionReporter</a> ::
+        Class&nbsp;VersionReporter
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="inca.VersionReporter.VersionReporter-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class VersionReporter</h1><p class="nomargin-top"><span class="codelink"><a href="inca.VersionReporter-pysrc.html#VersionReporter">source&nbsp;code</a></span></p>
+<pre class="base-tree">
+<a href="inca.Reporter.Reporter-class.html">Reporter.Reporter</a> --+
+                    |
+                   <strong class="uidshort">VersionReporter</strong>
+</pre>
+
+<hr />
+<p>VersionReporter - Convenience module for creating version 
+  reporters:</p>
+<pre class="literalblock">
+ from inca.VersionReporter import VersionReporter
+ reporter = VersionReporter()
+ command = 'somecommand -version'
+ pattern = '^version &quot;(.*)&quot;'
+ ...
+ reporter.setPackageName('packageX')
+ reporter.setVersionByExecutable(command, pattern)
+ reporter.printReporter()
+
+ or
+
+ reporter.setVersionByGptQuery('packageX')
+
+ or
+
+ reporter.setVersionByRpmQuery('packageX')
+
+ or
+
+ reporter-&gt;setPackageVersion('x.x.x')
+
+ or
+
+ for subpackage in subpackages:
+   reporter.setSubpackageVersion(subpackage, version)
+</pre>
+  <p>This module is a subclass of Reporter that provides convenience 
+  methods for creating version reporters.  A version reporter reports this 
+  version information for a package in the following schema (i.e., this is 
+  the body of the Inca report):</p>
+<pre class="literalblock">
+ &lt;packageVersion&gt;
+   &lt;ID&gt;packageX&lt;/ID&gt;
+   &lt;version&gt;x.x.x&lt;/version&gt;
+ &lt;/packageVersion&gt;
+
+ or
+
+ &lt;packageVersion&gt;
+   &lt;ID&gt;packageX&lt;/ID&gt;
+   &lt;subpackage&gt;
+     &lt;ID&gt;subpackageX&lt;/ID&gt;
+     &lt;version&gt;x.x.x&lt;/version&gt;
+   &lt;/subpackage&gt;
+   &lt;subpackage&gt;
+     &lt;ID&gt;subpackageY&lt;/ID&gt;
+     &lt;version&gt;x.x.x&lt;/version&gt;
+   &lt;/subpackage&gt;
+ &lt;/packageVersion&gt;
+</pre>
+  <p>Version information can be set using one of the basic methods 
+  setPackageVersion (for the first example) or setSubpackageVersion (for 
+  the second). In this case, the user retrieves a package's version 
+  information directly and uses one of these two methods to report it.  
+  This module also provides convenience methods that retrieve a package 
+  version using conventional methods of querying version information.</p>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="inca.VersionReporter.VersionReporter-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">**attributes</span>)</span><br />
+      Class constructor that returns a new VersionReporter object.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.VersionReporter-pysrc.html#VersionReporter.__init__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getPackageName"></a><span class="summary-sig-name">getPackageName</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Returns the name of the package.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.VersionReporter-pysrc.html#VersionReporter.getPackageName">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getPackageVersion"></a><span class="summary-sig-name">getPackageVersion</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Returns the version of the package.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.VersionReporter-pysrc.html#VersionReporter.getPackageVersion">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getSubpackageNames"></a><span class="summary-sig-name">getSubpackageNames</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Returns a list of all the names of all subpackages with a set 
+      version.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.VersionReporter-pysrc.html#VersionReporter.getSubpackageNames">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getSubpackageVersion"></a><span class="summary-sig-name">getSubpackageVersion</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">name</span>)</span><br />
+      Returns the version of subpackage name.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.VersionReporter-pysrc.html#VersionReporter.getSubpackageVersion">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="inca.VersionReporter.VersionReporter-class.html#reportBody" class="summary-sig-name">reportBody</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Constructs and returns the body of the reporter.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.VersionReporter-pysrc.html#VersionReporter.reportBody">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="setPackageName"></a><span class="summary-sig-name">setPackageName</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">name</span>)</span><br />
+      Set the name of the package.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.VersionReporter-pysrc.html#VersionReporter.setPackageName">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="setPackageVersion"></a><span class="summary-sig-name">setPackageVersion</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">version</span>)</span><br />
+      Report the version of a package as version.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.VersionReporter-pysrc.html#VersionReporter.setPackageVersion">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="setSubpackageVersion"></a><span class="summary-sig-name">setSubpackageVersion</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">name</span>,
+        <span class="summary-sig-arg">version</span>)</span><br />
+      Report the version of subpackage name as version.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.VersionReporter-pysrc.html#VersionReporter.setSubpackageVersion">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="inca.VersionReporter.VersionReporter-class.html#setVersionByCompiledProgramOutput" class="summary-sig-name">setVersionByCompiledProgramOutput</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">**attrs</span>)</span><br />
+      Retrieve the package version by compiling and running a program and 
+      matching its output against a pattern.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.VersionReporter-pysrc.html#VersionReporter.setVersionByCompiledProgramOutput">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="inca.VersionReporter.VersionReporter-class.html#setVersionByExecutable" class="summary-sig-name">setVersionByExecutable</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">command</span>,
+        <span class="summary-sig-arg">pattern</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">timeout</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Retrieve package version information by executing command and greping
+      the output for pattern.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.VersionReporter-pysrc.html#VersionReporter.setVersionByExecutable">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="inca.VersionReporter.VersionReporter-class.html#setVersionByFileContents" class="summary-sig-name">setVersionByFileContents</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">path</span>,
+        <span class="summary-sig-arg">pattern</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Retrieve the package version by grep'ing the file path for pattern.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.VersionReporter-pysrc.html#VersionReporter.setVersionByFileContents">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="inca.VersionReporter.VersionReporter-class.html#setVersionByGptQuery" class="summary-sig-name">setVersionByGptQuery</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">*prefixes</span>)</span><br />
+      Set subpackage version information by querying GPT for packages 
+      prefixed with any element of prefixes.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.VersionReporter-pysrc.html#VersionReporter.setVersionByGptQuery">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="inca.VersionReporter.VersionReporter-class.html#setVersionByRpmQuery" class="summary-sig-name">setVersionByRpmQuery</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">pattern</span>)</span><br />
+      Set subpackage version information by querying GPT for packages that 
+      contain the regular expression pattern.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="inca.VersionReporter-pysrc.html#VersionReporter.setVersionByRpmQuery">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="inca.Reporter.Reporter-class.html">Reporter.Reporter</a></code></b>:
+      <code><a href="inca.Reporter.Reporter-class.html#__del__">__del__</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#addArg">addArg</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#addDependency">addDependency</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#argValue">argValue</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#argValues">argValues</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#compiledProgramOutput">compiledProgramOutput</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#compiledProgramStatusOutput">compiledProgramStatusOutput</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#failPrintAndExit">failPrintAndExit</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#getBody">getBody</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#getCompleted">getCompleted</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#getCwd">getCwd</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#getDescription">getDescription</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#getFailMessage">getFailMessage</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#getName">getName</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#getUrl">getUrl</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#getVersion">getVersion</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#log">log</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#loggedCommandOutput">loggedCommandOutput</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#loggedCommandStatusOutput">loggedCommandStatusOutput</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#printReport">printReport</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#processArgv">processArgv</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#report">report</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#setBody">setBody</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#setCompleted">setCompleted</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#setCwd">setCwd</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#setDescription">setDescription</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#setFailMessage">setFailMessage</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#setName">setName</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#setResult">setResult</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#setUrl">setUrl</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#setVersion">setVersion</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#tempFile">tempFile</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#xmlElement">xmlElement</a></code>
+      </p>
+    <div class="private">    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="inca.Reporter.Reporter-class.html">Reporter.Reporter</a></code></b> (private):
+      <code><a href="inca.Reporter.Reporter-class.html#_helpXml" onclick="show_private();">_helpXml</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#_iso8601Time" onclick="show_private();">_iso8601Time</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#_reportXml" onclick="show_private();">_reportXml</a></code>,
+      <code><a href="inca.Reporter.Reporter-class.html#_timeoutException" onclick="show_private();">_timeoutException</a></code>
+      </p></div>
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Method Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-MethodDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="__init__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">**attributes</span>)</span>
+    <br /><em class="fname">(Constructor)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="inca.VersionReporter-pysrc.html#VersionReporter.__init__">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Class constructor that returns a new VersionReporter object.  The 
+  constructor supports the following parameters in addition to those 
+  supported by Reporter:</p>
+<pre class="literalblock">
+ package_name
+   the name of the package for which a version is being determined;
+   default ''.
+
+ package_version
+   the version of the package.
+</pre>
+  <dl class="fields">
+    <dt>Overrides:
+        <a href="inca.Reporter.Reporter-class.html#__init__">Reporter.Reporter.__init__</a>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="reportBody"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">reportBody</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="inca.VersionReporter-pysrc.html#VersionReporter.reportBody">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Constructs and returns the body of the reporter.</p>
+  <dl class="fields">
+    <dt>Overrides:
+        <a href="inca.Reporter.Reporter-class.html#reportBody">Reporter.Reporter.reportBody</a>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="setVersionByCompiledProgramOutput"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">setVersionByCompiledProgramOutput</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">**attrs</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="inca.VersionReporter-pysrc.html#VersionReporter.setVersionByCompiledProgramOutput">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Retrieve the package version by compiling and running a program and 
+  matching its output against a pattern.  Returns 1 if successful, else 0. 
+  The function recognizes the following parameter in addition to those 
+  supported by the compiledProgramOutput method of Reporter:</p>
+<pre class="literalblock">
+pattern
+  pattern to search for in program output; default '(.+)'
+</pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="setVersionByExecutable"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">setVersionByExecutable</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">command</span>,
+        <span class="sig-arg">pattern</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">timeout</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="inca.VersionReporter-pysrc.html#VersionReporter.setVersionByExecutable">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Retrieve package version information by executing command and greping 
+  the output for pattern.  command is the executable and argument string to
+  retrieve the version (e.g., command_name -version) and pattern is a 
+  pattern containing one grouping (i.e., memory parentheses) to retrieve 
+  the version from the output.  pattern defaults to '([\d\.]+)' if not 
+  specified.  Fails if timeout is specified and command does not complete 
+  within timeout seconds.  Returns 1 if successful, else 0.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="setVersionByFileContents"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">setVersionByFileContents</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">path</span>,
+        <span class="sig-arg">pattern</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="inca.VersionReporter-pysrc.html#VersionReporter.setVersionByFileContents">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Retrieve the package version by grep'ing the file path for pattern. 
+  pattern defaults to '([\d\.]+)' if not specified.  Returns 1 if 
+  successful, else 0.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="setVersionByGptQuery"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">setVersionByGptQuery</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">*prefixes</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="inca.VersionReporter-pysrc.html#VersionReporter.setVersionByGptQuery">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Set subpackage version information by querying GPT for packages 
+  prefixed with any element of prefixes.  Returns 1 if successful, else 
+  0.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="setVersionByRpmQuery"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">setVersionByRpmQuery</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">pattern</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="inca.VersionReporter-pysrc.html#VersionReporter.setVersionByRpmQuery">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Set subpackage version information by querying GPT for packages that 
+  contain the regular expression pattern.  Returns 1 if successful, else 
+  0.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="inca-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Wed Apr  9 13:44:02 2008
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

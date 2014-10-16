@@ -1,0 +1,6 @@
+K 13
+svn:externals
+V 89
+figures http://cuzco.sdsc.edu:9080/misc/inca/subversion/inca/trunk/pubs/docs/src/figures
+
+END
