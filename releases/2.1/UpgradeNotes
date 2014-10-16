@@ -1,0 +1,50 @@
+Upgrade Inca to 2.1 from a 2.03 installation:
+
+1. Download the 2.1 distribution into a new directory ($INCA_2.1)
+
+     % wget http://inca.sdsc.edu/releases/2.1/incaInstall.sh
+     % sh incaInstall.sh $INCA_2.1 core
+
+2. (optional) Many stylesheets for the consumer have been improved to be more
+   readable and are also required as the underlying XML has changed slightly
+   (the <suites> tag is now enclosed in a <suiteResults> tag).  To verify
+   changes in your stylesheets before deploying the new jar files, start up a
+   consumer on an alternate port within the $INCA_2.1 directory:
+
+     % cd $INCA_2.1
+     % cp $INCA_2.03/etc/*.pem  $INCA_2.1/etc
+     % cp $INCA_2.03/etc/trusted/*.pem  $INCA_2.1/etc/trusted
+     % cp $INCA_2.03/etc/common/inca.properties  $INCA_2.1/etc/common
+  
+   Edit etc/jetty.xml and change 8080 on line 54 to an unused port (i.e., 8085)
+  
+     % ./bin/inca start consumer
+  
+   Test your XSL stylesheets and when satisfied, continue to step 3.
+
+3. Copy the jars from the $INCA_2.1 dir to your 2.03 installation.
+
+     % cd $INCA_2.03
+     % cp $INCA_2.1/lib/*.jar lib
+
+4. Copy the new consumer config files to your installation
+
+     % cp -r $INCA_2.1/webapps .
+     % cp $INCA_2.1/etc/jetty.xml etc
+     % cp $INCA_2.1/etc/realm.properties etc
+     % cp $INCA_2.1/etc/webdefault.xml etc
+
+5. Copy consumer stylesheets to the etc directory (you may wish to backup 
+   any custom 2.03 XSL before this step)
+
+     % cp $INCA_2.1/etc/*.xsl etc
+
+6. If you use the manual reporter manager option, copy the customizable
+   email template.
+
+     % cp $INCA_2.1/etc/manualEmail.txt etc
+
+7. Restart Inca
+
+     % ./bin/inca stop all
+     % ./bin/inca start all

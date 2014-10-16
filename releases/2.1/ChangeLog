@@ -1,0 +1,115 @@
+Inca 2.1:  August 1, 2007
+  * Jetty (deploys consumer) can now be configured via jetty.xml
+    and webdefault.xml -- convenient for configuring https or
+    to protect pages with a password
+
+  * Added feature in incat to enable copying of suites
+
+  * Added feature in incat to enable series to be moved from
+    one suite to another
+
+  * Added feature in incat to refresh the repository contents after a
+    change in the repository
+
+  * added new reporters: cluster.netstat.unit, ws.container.tomcat.version,
+    and ws.portlet.gridsphere.version
+
+  * Improved manual access method for reporter managers so that changes
+    are now only emailed when needed (i.e., not after a restart nor
+    run now).  The changes are sent as 2 attachments, one with just
+    the changes and the other containing the suite with the updates
+    already included.  There is also a way to customize the text that
+    gets sent in the message in etc/manualEmail.txt
+
+  * refactored xsl stylesheets to be make them easier to modify
+  
+  * config.xsl stylesheet now displays cron and
+    notification configuration and is linked to the default page
+
+  * jsp pages and stylesheets now allow for display of multiple suites
+  
+  * Sped up depot queries: get suite latest instances and get series
+
+  * Fixed bug where temporary password files for Globus access method
+    (to feed password via stdin) were not getting cleaned up appropriately
+
+  * Fixed bug where Inca errored out that no passphrase was supplied
+    when using unencrypted keys
+
+  * fixed sporadic bug in inca-run-now where running reporters that depend on
+    a proxy failed.
+
+  * fixed path in reporter viz.lib.chromium.version
+
+Inca 2.03:  June 15, 2007
+  * Added command-line run now capability in reporter manager
+
+  * Fixed bug in depot with sending notifications on series with nicknames
+    containing spaces
+
+  * Fixed incat bug with displaying default arguments containing spaces.
+
+  * Added the following new reporters:  data.access.postgres.unit.connect,
+    data.db.postgres.version, cluster.mgmt.rocks.version,
+    cluster.monitoring.ganglia.version, cluster.web.httpd.version,
+    ws.soap.axis.version, cluster.ps.unit, cluster.os.redhat.version
+
+  * Fixed XML output bug in reporter cluster.admin.bash.version
+
+  * Fixed bug in getting kernel version in reporter cluster.os.kernel.version
+
+  * Added executable arg option in reporter grid.middleware.globus.unit.wsgram
+
+  * Added legend to consumer stylesheets: swStack.xsl and default.xsl
+
+  * fixed bug with reporter manager not stopping when using 
+    ./bin/inca stop reporter-manager
+
+Inca 2.02: May 31, 2007
+  * fixed memory leaks in agent, depot, and consumer (users must also use
+    Java 1.5 or higher)
+
+  * fixed bug in depot that was causing duplicate notifications 
+
+  * added feature in incat to check for errors in the configuration (e.g., use
+    of undefined macro) and highlight them as red.  Also, will check 
+    configuration for errors before commit.
+
+Inca 2.01: March 19, 2007
+  * added proxy dependency to the following reporters:
+    cluster.interactive_access.openssh.unit,
+    data.transfer.gridftp.unit.copy, grid.middleware.globus.7step.unit,
+    grid.middleware.globus.mpiring.unit,
+    grid.middleware.globus.unit.gatekeeper,
+    grid.middleware.globus.unit.gramversion,
+    grid.middleware.globus.unit.rft, grid.middleware.globus.unit.rftversion,
+    grid.middleware.globus.unit.rls, grid.middleware.globus.unit.securemds,
+    grid.middleware.globus.unit.wsgram,
+    grid.middleware.globus.unit.wsrfquery, and
+    user.basicFunctionality.gridJobSubmission.unit
+
+  * added new reporters: cluster.math.mkl.version, grid.middleware.cog.version,
+    grid.middleware.globus.unit.securemds,
+    grid.middleware.globus.unit.ssldepth, and grid.middleware.rlsclient.version
+  
+  * fixed minor bugs in the following reporters:
+    cluster.interactive_access.openssh.version and cluster.java.sun.version 
+
+  * fixed security problem in reporters.cgi to disable reading of files
+    outside of reporter repository
+
+  * improved proxy handling in reporter manager: set dynamic library paths for
+    globus and myproxy commands if needed and set signal handler for system
+    commands
+
+  * added parsing for service (e.g., jobmanager-fork) in GRAM contact strings
+
+  * fixed bug to create reporter manager directory when using Globus access
+    method
+
+  * fixed bug to properly show failed comparisons in consumer HTML output 
+
+  * improved depot notification processing and messages 
+
+Inca 2.0:  February 2, 2007
+  Initial release
