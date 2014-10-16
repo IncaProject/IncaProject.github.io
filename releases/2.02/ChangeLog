@@ -1,0 +1,48 @@
+Inca 2.02: May 31, 2007
+  * fixed memory leaks in agent, depot, and consumer (users must also use
+    Java 1.5 or higher)
+
+  * fixed bug in depot that was causing duplicate notifications 
+
+  * added feature in incat to check for errors in the configuration (e.g., use
+    of undefined macro) and highlight them as red.  Also, will check 
+    configuration for errors before commit.
+
+Inca 2.01: March 19, 2007
+  * added proxy dependency to the following reporters:
+    cluster.interactive_access.openssh.unit,
+    data.transfer.gridftp.unit.copy, grid.middleware.globus.7step.unit,
+    grid.middleware.globus.mpiring.unit,
+    grid.middleware.globus.unit.gatekeeper,
+    grid.middleware.globus.unit.gramversion,
+    grid.middleware.globus.unit.rft, grid.middleware.globus.unit.rftversion,
+    grid.middleware.globus.unit.rls, grid.middleware.globus.unit.securemds,
+    grid.middleware.globus.unit.wsgram,
+    grid.middleware.globus.unit.wsrfquery, and
+    user.basicFunctionality.gridJobSubmission.unit
+
+  * added new reporters: cluster.math.mkl.version, grid.middleware.cog.version,
+    grid.middleware.globus.unit.securemds,
+    grid.middleware.globus.unit.ssldepth, and grid.middleware.rlsclient.version
+  
+  * fixed minor bugs in the following reporters:
+    cluster.interactive_access.openssh.version and cluster.java.sun.version 
+
+  * fixed security problem in reporters.cgi to disable reading of files
+    outside of reporter repository
+
+  * improved proxy handling in reporter manager: set dynamic library paths for
+    globus and myproxy commands if needed and set signal handler for system
+    commands
+
+  * added parsing for service (e.g., jobmanager-fork) in GRAM contact strings
+
+  * fixed bug to create reporter manager directory when using Globus access
+    method
+
+  * fixed bug to properly show failed comparisons in consumer HTML output 
+
+  * improved depot notification processing and messages 
+
+Inca 2.0:  February 2, 2007
+  Initial release
