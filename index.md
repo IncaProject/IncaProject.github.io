@@ -9,7 +9,7 @@ image:
 
 	<div class="tile">
 		<h2 class="post-title">Enables consistent user-level testing across resources</h2>
-		<p class="post-excerpt">Emulates a Grid user by running under a standard user account and executing tests using a standard GSI credential. Ensures consistent testing across resources with centralized test configuration.</p>
+		<p class="post-excerpt">Runs under a standard user account and executes tests using a standard GSI credential. Ensures consistent testing across resources with centralized test configuration.</p>
 	</div>
 
 	<div class="tile">
@@ -24,22 +24,22 @@ image:
 
 	<div class="tile">
 		<h2 class="post-title">Large variety of tests</h2>
-		<p class="post-excerpt">Inca offers a number of prewritten test scripts, called <a href="/reporters">reporters</a>, for monitoring Grid health. Reporter APIs make it easy to create new Inca tests.</p>
+		<p class="post-excerpt">Inca offers a number of prewritten test scripts, called <a href="/reporters">reporters</a>, for monitoring cyberinfrastructure health. Reporter APIs make it easy to create new Inca tests.</p>
 	</div>
 
 	<div class="tile">
 		<h2 class="post-title">Archived results support troubleshooting</h2>
-		<p class="post-excerpt">Furthers understanding of Grid behavior by storing and archiving complete monitoring results. Allows system administrators to debug detected failures using archived execution details.</p>
+		<p class="post-excerpt">Furthers understanding of cyberinfrastructure behavior by storing and archiving complete monitoring results. Allows system administrators to debug detected failures using archived execution details.</p>
 	</div>
 
 	<div class="tile">
 		<h2 class="post-title">Comprehensive views of data</h2>
-		<p class="post-excerpt">Offers a variety of Grid data views from cumulative summaries to reporter execution details and result histories.</p>
+		<p class="post-excerpt">Offers a variety of cyberinfrastructure data views from cumulative summaries to reporter execution details and result histories.</p>
 	</div>
 
 	<div class="tile">
 		<h2 class="post-title">Secure</h2>
-		<p class="post-excerpt">Inca components communicate using SSL. Securely manages short-term proxies for Grid service testing.</p>
+		<p class="post-excerpt">Inca components communicate using SSL. Securely manages short-term proxies for cyberinfrastructure service testing.</p>
 	</div>
 
 	<div class="tile">
