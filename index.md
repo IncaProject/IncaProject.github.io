@@ -44,6 +44,6 @@ image:
 
 	<div class="tile">
 		<h2 class="post-title">Learn more</h2>
-		<p class="post-excerpt"><strong>For more information about Inca</strong>, please visit our <a href="/documentation">documentation page</a>.</p><p class="post-excerpt">Inca is supported by the <a href="http://www.nsf.gov/">National Science Foundation (NSF)</a>.</p>
+		<p class="post-excerpt">For more information about Inca, please visit our <a href="/documentation">documentation page</a>.</p><p class="post-excerpt">Inca is supported by the <a href="http://www.nsf.gov/">National Science Foundation (NSF)</a>.</p>
 	</div>
 </div>
