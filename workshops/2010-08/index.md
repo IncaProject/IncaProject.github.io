@@ -11,7 +11,7 @@ title: Inca Workshop (August 26-27, 2010)
 		</tr>
 		<tr>
 			<td><a href="overview.pdf">Inca overview</a> (<a href="archRef.pdf">architecture reference</a>)</td>
-			<td><a href="video/overview.mp4"><em>watch the webcast</em></a><br />
+			<td><a href="https://ucsdcloud-my.sharepoint.com/personal/kericson_ucsd_edu/_layouts/15/guestaccess.aspx?guestaccesstoken=C3YlcaAbEhswdpgxVtrptH177Bfv4DjAZksJj3uifJY%3d&docid=0d78feaffbe7143739b5fc2578801d13a"><em>watch the webcast</em></a><br />
 				68 minutes</td>
 		</tr>
 		<tr>
