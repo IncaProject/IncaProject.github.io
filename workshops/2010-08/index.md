@@ -16,7 +16,7 @@ title: Inca Workshop (August 26-27, 2010)
 		</tr>
 		<tr>
 			<td><a href="incaReporters.pdf">Working with Inca Reporters</a></td>
-			<td><a href="video/incaReporters.mp4"><em>watch the webcast</em></a><br />
+			<td><a href="https://ucsdcloud-my.sharepoint.com/personal/kericson_ucsd_edu/_layouts/15/guestaccess.aspx?guestaccesstoken=d1Yt2U9%2fbI2vxBM9WCq2lLaGYIrd5zNj%2bYdv%2b8gV%2bMw%3d&docid=0b4a1bec0d0f64dfaabcf513f6f9cf90e"><em>watch the webcast</em></a><br />
 				47 minutes</td>
 		</tr>
 		<tr>
@@ -25,12 +25,12 @@ title: Inca Workshop (August 26-27, 2010)
 		</tr>
 		<tr>
 			<td><a href="control.pdf">Inca Control Infrastructure</a></td>
-			<td><a href="video/control.mp4"><em>watch the webcast</em></a><br />
+			<td><a href="https://ucsdcloud-my.sharepoint.com/personal/kericson_ucsd_edu/_layouts/15/guestaccess.aspx?guestaccesstoken=wqFM1XW2EduBb0601Zkmgwb4d9Abxzce3xPS5zwECRA%3d&docid=0a589fc282a7545ca959c4aeb9273b378"><em>watch the webcast</em></a><br />
 				47 minutes</td>
 		</tr>
 		<tr>
 			<td><a href="incat.pdf">Administering Inca with incat</a></td>
-			<td><a href="video/incat.mp4"><em>watch the webcast</em></a><br />
+			<td><a href="https://ucsdcloud-my.sharepoint.com/personal/kericson_ucsd_edu/_layouts/15/guestaccess.aspx?guestaccesstoken=tkvmhBHtkOedG%2bzGZ4eNU0XYBUVzyReoP1dSqeECdTw%3d&docid=0623b666ea7b04124a36bb495b724926d"><em>watch the webcast</em></a><br />
 				24 minutes</td>
 		</tr>
 		<tr>
@@ -42,17 +42,17 @@ title: Inca Workshop (August 26-27, 2010)
 		</tr>
 		<tr>
 			<td><a href="depot.pdf">Inside the Inca Depot</a></td>
-			<td><a href="video/depot.mp4"><em>watch the webcast</em></a><br />
+			<td><a href="https://ucsdcloud-my.sharepoint.com/personal/kericson_ucsd_edu/_layouts/15/guestaccess.aspx?guestaccesstoken=p7IC4%2fCf9zNd4G11kaCOcHIyjQR7M98AjodEW2o3aUU%3d&docid=0d1c79e572c8d422aaa46ba1d269e2de7"><em>watch the webcast</em></a><br />
 				18 minutes</td>
 		</tr>
 		<tr>
 			<td><a href="consumer.pdf">Inca data display (data consumers)</a></td>
-			<td><a href="video/consumer.mp4"><em>watch the webcast</em></a><br />
+			<td><a href="https://ucsdcloud-my.sharepoint.com/personal/kericson_ucsd_edu/_layouts/15/guestaccess.aspx?guestaccesstoken=3JDd9ZzCnj2Hk1L7cFYq48PHrM4KN2lHahULr%2fN%2fi0I%3d&docid=0d6328859de0a4893904e5eaf5dc57e16"><em>watch the webcast</em></a><br />
 				41 minutes</td>
 		</tr>
 		<tr>
 			<td><a href="writing-consumer.pdf">Writing data consumers</a></td>
-			<td><a href="video/writing-consumer.mp4"><em>watch the webcast</em></a><br />
+			<td><a href="https://ucsdcloud-my.sharepoint.com/personal/kericson_ucsd_edu/_layouts/15/guestaccess.aspx?guestaccesstoken=HGWNStZneXHlBrAdeMO2wuoNlt5r6%2fiQRRLpeMF7sZo%3d&docid=0c56f36b9981e4afba2053ccefbb459a5"><em>watch the webcast</em></a><br />
 				34 minutes</td>
 		</tr>
 		<tr>
