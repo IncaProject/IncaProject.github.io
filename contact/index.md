@@ -9,16 +9,16 @@ title: Contact Us
 <ul>
 	<li><a href="http://users.sdsc.edu/%7Essmallen/">Shava Smallen</a> (SDSC), <em>project lead</em></li>
 	<li>Paul Hoover (SDSC)</li>
-	<li><a href="http://users.sdsc.edu/%7Ekericson/">Kate Kaya</a> (SDSC)</li>
+	<li><a href="http://katekaya.com/">Kate Kaya</a> (SDSC)</li>
 </ul>
 <p>Past Inca project contributors and their institution while associated with Inca:</p>
 <ul>
-	<li><a href="http://www-unix.mcs.anl.gov/%7Ebeckman/">Pete Beckman</a> (ANL)</li>
-	<li>Mike Feldmann (CalTech)</li>
+	<li><a href="https://www.linkedin.com/in/petebeckman">Pete Beckman</a> (ANL)</li>
+	<li><a href="https://www.linkedin.com/pub/michael-feldmann/12/933/508">Mike Feldmann</a> (CalTech)</li>
 	<li>Jim Hayes (SDSC)</li>
-	<li><a href="http://www.sdsc.edu/%7Etkaiser/">Tim Kaiser</a> (SDSC)</li>
-	<li>Omid Khalili (SDSC)</li>
-	<li>Cathie Olschanowsky (SDSC)</li>
-	<li>Jennifer Schopf (ANL)</li>
+	<li><a href="https://www.linkedin.com/pub/timothy-kaiser/3b/3bb/309">Tim Kaiser</a> (SDSC)</li>
+	<li><a href="https://www.linkedin.com/in/omidkhalili">Omid Khalili</a> (SDSC)</li>
+	<li><a href="https://www.linkedin.com/pub/catherine-olschanowsky/5/3ab/548">Cathie Olschanowsky</a> (SDSC)</li>
+	<li><a href="https://www.linkedin.com/pub/jennifer-schopf/0/28/883">Jennifer Schopf</a> (ANL)</li>
 </ul>
 
