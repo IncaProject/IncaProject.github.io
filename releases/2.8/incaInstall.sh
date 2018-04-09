@@ -162,7 +162,7 @@ cd $installdir;
 installdir=`pwd`
 for component in $modules; do
   name="";
-  if test "${component}" = "Inca-Reporter" -o "${component}" = "Inca-WS"; then
+  if test "${component}" = "Inca-Reporter"; then
     name=${component}
   elif test "${component}" = "incat"; then
     name="${component}-bin"
@@ -185,9 +185,6 @@ for component in $modules; do
   gunzip "${name}.tar.gz";
   gtar xvf "${name}.tar";
   rm -f "${name}.tar";
-  if ( test "${component}" = "Inca-WS" ); then
-    installWS
-  fi
   echo "${component} installed";
 done
 
