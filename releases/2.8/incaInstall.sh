@@ -83,34 +83,6 @@ checkForHttpGet() {
   done
 }
 
-#-----------------------------------------------------------------------------#
-# installWS
-#
-# Runs the installer script for the Inca-WS component
-#-----------------------------------------------------------------------------#
-installWS() {
-  wsdir=""; #in case there are multiple Inca-WS dirs (e.g., one or more updates)
-  wsdirs=`ls -d Inca-WS* 2>/dev/null | grep -v tar`
-  if ( test $? -eq 0 ); then
-    for dir in ${wsdirs}; do
-      # get the last listed dir (latest version)
-      wsdir=${dir}
-    done
-    if ( test -d ${wsdir} ); then
-      cd ${wsdir} 2>&1 >> ${installdir}/install.log
-      perl -I${installdir}/lib/perl Makefile.PL \
-           PREFIX=${installdir} INSTALLDIRS=perl \
-           LIB=${installdir}/lib/perl \
-           INSTALLSCRIPT=${installdir}/bin \
-           INSTALLMAN1DIR=${installdir}/man/man1 \
-           INSTALLMAN3DIR=${installdir}/man/man3  2>&1 ${installdir}/install.log
-      make >> ${installdir}/install.log
-      make install >> ${installdir}/install.log
-      cd ${installdir} 2>&1 >> ${installdir}/install.log
-    fi
-  fi
-}
-
 #=============================================================================#
 # Main
 #=============================================================================#
