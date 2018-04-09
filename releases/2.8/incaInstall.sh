@@ -18,10 +18,10 @@
 # Global Vars
 #=============================================================================#
 
-SERVER="common-java agent consumers depot Inca-WS"
+SERVER="common-java agent consumers depot"
 CORE="common-java agent consumers depot incat Inca-Reporter"
 ALL="${SERVER} incat Inca-Reporter"
-REAL_ALL="${ALL} reporters incaws"
+REAL_ALL="${ALL} reporters"
 INCA_RELEASES="http://inca.sdsc.edu/releases/2.8"
 HTTP_GET_METHODS="wget curl"
 
@@ -54,11 +54,10 @@ printUsage() {
   echo "    depot     the Inca component responsible for storing and archiving";
   echo "              reporter data";
   echo "    incat     GUI for configuring and administering an Inca deployment";
-  echo "    incaws    the Web Services server";
   echo "    reporters the Inca reporter API and repository tools";
   echo;
   echo "  core        the Inca agent, consumers, depot, components";
-  echo "  server      the Inca agent, consumers, depot, and incaws components";
+  echo "  server      the Inca agent, consumers, and depot components";
   echo;
   echo "Options:";
   echo "  r     Specify an alternative release directory [default: $INCA_RELEASES]";
@@ -82,34 +81,6 @@ checkForHttpGet() {
       return;
     fi
   done
-}
-
-#-----------------------------------------------------------------------------#
-# installWS
-#
-# Runs the installer script for the Inca-WS component
-#-----------------------------------------------------------------------------#
-installWS() {
-  wsdir=""; #in case there are multiple Inca-WS dirs (e.g., one or more updates)
-  wsdirs=`ls -d Inca-WS* 2>/dev/null | grep -v tar`
-  if ( test $? -eq 0 ); then
-    for dir in ${wsdirs}; do
-      # get the last listed dir (latest version)
-      wsdir=${dir}
-    done
-    if ( test -d ${wsdir} ); then
-      cd ${wsdir} 2>&1 >> ${installdir}/install.log
-      perl -I${installdir}/lib/perl Makefile.PL \
-           PREFIX=${installdir} INSTALLDIRS=perl \
-           LIB=${installdir}/lib/perl \
-           INSTALLSCRIPT=${installdir}/bin \
-           INSTALLMAN1DIR=${installdir}/man/man1 \
-           INSTALLMAN3DIR=${installdir}/man/man3  2>&1 ${installdir}/install.log
-      make >> ${installdir}/install.log
-      make install >> ${installdir}/install.log
-      cd ${installdir} 2>&1 >> ${installdir}/install.log
-    fi
-  fi
 }
 
 #=============================================================================#
@@ -170,8 +141,6 @@ else
   if test "${validmodule}" != ""; then
     if test "$2" = "reporters"; then
       modules="Inca-Reporter"
-    elif test "$2" = "incaws"; then
-      modules="Inca-WS"
     elif test "$2" = "manager"; then
       modules="Inca-ReporterManager"
     elif test "$2" = "common-java"; then
@@ -193,7 +162,7 @@ cd $installdir;
 installdir=`pwd`
 for component in $modules; do
   name="";
-  if test "${component}" = "Inca-Reporter" -o "${component}" = "Inca-WS"; then
+  if test "${component}" = "Inca-Reporter"; then
     name=${component}
   elif test "${component}" = "incat"; then
     name="${component}-bin"
@@ -216,9 +185,6 @@ for component in $modules; do
   gunzip "${name}.tar.gz";
   gtar xvf "${name}.tar";
   rm -f "${name}.tar";
-  if ( test "${component}" = "Inca-WS" ); then
-    installWS
-  fi
   echo "${component} installed";
 done
 
