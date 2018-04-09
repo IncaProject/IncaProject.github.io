@@ -169,8 +169,6 @@ else
   if test "${validmodule}" != ""; then
     if test "$2" = "reporters"; then
       modules="Inca-Reporter"
-    elif test "$2" = "incaws"; then
-      modules="Inca-WS"
     elif test "$2" = "manager"; then
       modules="Inca-ReporterManager"
     elif test "$2" = "common-java"; then
