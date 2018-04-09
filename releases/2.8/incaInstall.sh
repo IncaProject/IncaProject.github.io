@@ -21,7 +21,7 @@
 SERVER="common-java agent consumers depot Inca-WS"
 CORE="common-java agent consumers depot incat Inca-Reporter"
 ALL="${SERVER} incat Inca-Reporter"
-REAL_ALL="${ALL} reporters incaws"
+REAL_ALL="${ALL} reporters"
 INCA_RELEASES="http://inca.sdsc.edu/releases/2.8"
 HTTP_GET_METHODS="wget curl"
 
@@ -54,11 +54,10 @@ printUsage() {
   echo "    depot     the Inca component responsible for storing and archiving";
   echo "              reporter data";
   echo "    incat     GUI for configuring and administering an Inca deployment";
-  echo "    incaws    the Web Services server";
   echo "    reporters the Inca reporter API and repository tools";
   echo;
   echo "  core        the Inca agent, consumers, depot, components";
-  echo "  server      the Inca agent, consumers, depot, and incaws components";
+  echo "  server      the Inca agent, consumers, and depot components";
   echo;
   echo "Options:";
   echo "  r     Specify an alternative release directory [default: $INCA_RELEASES]";
