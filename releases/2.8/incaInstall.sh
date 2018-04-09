@@ -18,7 +18,7 @@
 # Global Vars
 #=============================================================================#
 
-SERVER="common-java agent consumers depot Inca-WS"
+SERVER="common-java agent consumers depot"
 CORE="common-java agent consumers depot incat Inca-Reporter"
 ALL="${SERVER} incat Inca-Reporter"
 REAL_ALL="${ALL} reporters"
